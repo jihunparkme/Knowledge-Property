@@ -2,7 +2,7 @@
 
 제어권이 역전된 것 !?
 
-
+<br>
 
 ## IoC : Inversion of Control
 - 일반적으로는 자신이 사용할 의존성을 자신이 만들어서 사용
@@ -40,7 +40,7 @@
 
     - 의존성 관리란? 필요한 의존성을 필요할 때 적절히 주입해주는 것
 
-    
+<br>
 
 ## IoC(Inversion of Control) Container
 
