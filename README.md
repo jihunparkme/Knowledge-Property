@@ -7,7 +7,6 @@ It is a pleasure to accumulate knowledge.
 ## Spring
 
 - [Spring IoC](https://github.com/jihunparkme/Knowledge-Property/blob/master/Spring/Spring-IoC.md)
-- [Spring bean](https://github.com/jihunparkme/Knowledge-Property/blob/master/Spring/Spring-bean.md)
 
 <br>
 
