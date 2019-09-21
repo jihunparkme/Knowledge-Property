@@ -211,5 +211,58 @@ Spring AOP에서는 proxy가 대부분 자동으로 이루어짐
   ```
   
 
+<br>
 
+<br>
+
+## AOP 적용 예제
+
+메소드 처리 시간 로깅하는 annotation 생성하기
+
+```java
+@LogExecutionTime 
+public String method01(...) {
+    // ...
+}
+```
+
+
+
+- @LogExecutionTime annotation (어디에 annotation을 적용할지 표시)
+
+  ```java
+  @Target(ElementType.METHOD)  // annotation을 어디에 사용할 수 있을지 설정
+  @Retention(RetentionPolicy.RUNTIME)   // annotation 정보를 언제까지 유지할 것인지 설정
+  public @interface LogExecutionTime {
+      
+  }
+  ```
+
+- 실제 Aspect (@LogExecutionTime annotation이 달린 곳에 적용)
+  - Aspect이자 Spring이 제공해주는 annotation 기반의 AOP
+  - proxy pattern 기반으로 동작
+
+```java
+@Component	// bean으로 등록하기 위한 annotation
+@Aspect	// Aspect라는 것을 명시하기 위한 annotation    
+public class LogAspect {
+    
+    Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    
+    @Around("@annotation(LogExecutionTime)")  
+    // LogExecutionTime라는 annotation이 붙어있는 주변에 아래 코드를 적용하겠다는 의미
+    // @Around는 joinPoint(annotation이 붙어있는 메소드 타겟) parameter를 받기 위한 annotation
+    public Object LogExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        
+        Object proceed = joinPoint.proceed();	// parameter로 받은 Method를 실행
+        
+        stopWatch.stop();
+        logger.info(stopWatch.prettyPrint());
+        
+        return proceed;
+    }
+}
+```
 
