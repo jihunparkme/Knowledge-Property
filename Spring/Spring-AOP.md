@@ -131,7 +131,7 @@ AOP(Aspect Oriented Programming) - 관점 지향 프로그래밍
 Spring AOP에서는 proxy가 대부분 자동으로 이루어짐
 
 <p align="center">
-    <img src="../img/proxy.jpg">
+    <img src="../img/proxy.JPG">
 	<p align="center"> 출처 : https://refactoring.guru/design-patterns/proxy </p>
 </p>
 
