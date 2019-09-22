@@ -266,3 +266,6 @@ public class LogAspect {
 }
 ```
 
+
+
+> example : https://github.com/spring-projects/spring-petclinic
