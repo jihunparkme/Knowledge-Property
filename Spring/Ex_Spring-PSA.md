@@ -2,6 +2,10 @@
 
 PSA(Portable Service Abstraction)
 
+- Portable(휴대용의)이란 환경의 변화와 관계없이 일관된 방식으로 기술 접근 환경을 제공(코드 변경 X)
+  - Coding : Servlet, Reactive
+    - Server : Tomcat, Jetty, Netty, Undertow
+
 <br>
 
 ## Spring PSA? example
@@ -66,9 +70,11 @@ PSA(Portable Service Abstraction)
 
 MVC(Model-View-Controller)
 
+- Spring PSA 중 하나
+
 ### Controller
 
-- @Controller 클래스 안에 @GetMapping 혹은 @PostMapping 으로 요청을 Mapping하게 됨
+- @Controller 클래스 안에 @RequestMapping(@GetMapping 혹은 @PostMapping) 으로 요청을 Mapping하게 됨
 - Mapping이란 뒤의 url에 해당하는 요청이 들어왔을 때, 그 요청을 메소드가 처리하게끔 Mapping한다는 의미 
 - // OwnerController.java
 
@@ -175,9 +181,39 @@ MVC(Model-View-Controller)
     }
     ```
 
+<br>
+
+## Spring Transaction
+
+Spring PSA 중 하나
+
+- 사용하는 기술에 따라 `JpatransactionManager`, `Datasource Transactionmanager`, `Hibernate Transactionmanager` 중 골라서 사용 가능
+
+
+
+##### Transaction
+
+- Database에서 Data를 주고 받는 과정에서 A-B-C 작업이 모두 완료해야 할 때
+  - A, B, C 중 하나의 작업이라도 잘못 되면 그 작업을 다 같이 하면 안됨
+  - 작업이 되려면 A, B, C 다 같이 되거나, 아니면 다 같이 취소해야 함
+
+
+
+##### Spring Transaction
+
+- @Transactional 이라는 annotation만 붙이면, 해당 메소드는 Transaction 처리가 작동
+  - 명시적인 data transaction 코딩을 해주지 않더라도 spring에서 제공 
+
+<br>
+
+## Spring Cache
+
+
+
 
 
 
 
 
 > example : https://github.com/spring-projects/spring-petclinic
+> refer  : https://www.inflearn.com/course/spring_revised_edition/dashboard
