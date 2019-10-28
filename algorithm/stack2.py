@@ -19,12 +19,13 @@ class stack:
 
 
 def reverseString(str):
-	s = stack()
+	st = stack()
 	result = ""
 	for i in str:
-		s.push(i)
-	while s.isEmpty() != True:
-		result += s.pop()
+		st.push(i)
+	while st.isEmpty() != True:
+		result += st.pop()
 	return result
 
-print(reverseString("Hello"))
+if __name__ == "__main__":
+	print(reverseString("Hello"))
