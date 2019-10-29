@@ -120,9 +120,9 @@
 
    <img src="..\img\vector11.png" alt="png" />
 
-  
+
   <img src="..\img\vector13.png" alt="png" />
-  
+
 - 복소평면에서는 복소수를 좌표평면위에 나타내기 위해 x축을 실수축, y축을 허수축으로 잡음
 
   - (-3, 5) 는 복소수 z = -3 + 5i 
@@ -133,11 +133,11 @@
   
 
    <img src="..\img\vector14.png" alt="png" />
-  
+
 <br>
-  
+
    <img src="..\img\vector15.png" alt="png" />
-  
+
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
 
 ### 벡터와 함수
@@ -351,7 +351,7 @@
     
   
      <img src="..\img\vector44.png" alt="png" />
-      
+    
     - permutation을 이용하여 행렬식 구하기
 
       -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
@@ -384,22 +384,21 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.   <img src="..\img\vector57.png" alt="png" />
+  2.  <img src="..\img\vector57.png" alt="png" />
 
-  3.  <img src="..\img\vector58.png" alt="png" />
+  3. <img src="..\img\vector58.png" alt="png" />
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
-     
- <img src="..\img\vector59.png" alt="png" />
+     <img src="..\img\vector59.png" alt="png" />
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
-   
+  
    <img src="..\img\vector61.png" alt="png" />
-     
+  
    -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
   
      -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
-     
+  
      - <img src="..\img\vector62.png" alt="png" />
 
 ### 행렬식의 기하학적 의미
@@ -479,8 +478,9 @@
 
 - 공식
   
+
  <img src="..\img\vector84.png" alt="png"  />
-  
+
 - 정체
   <img src="..\img\vector85.png" alt="png"  />
 - 케일리-해밀턴 정리는 보통 높은 차수의 행렬에 관한 식을 낮은 차수로 변형시킬 때 사용
@@ -508,7 +508,8 @@
     - 연산자란 <img src="..\img\vector87.png" alt="png"  /> , 미분, 적분이 포함
 
   - 함수의 사용
-     
+    
+
  <img src="..\img\vector88.png" alt="png" style="zoom:90%;" />
      
 - 함수(변환)을 행렬로 표현할 수 있음
