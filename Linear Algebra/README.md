@@ -166,7 +166,8 @@
 - 각각의 수를 그 행렬의 성분으라고 부름
   - two by three matrix
     
-   <img src="..\img\vector19.png" alt="png" />
+  
+     <img src="..\img\vector19.png" alt="png" />
   
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
 - 두 개의 행벡터를 세로로 쌓은 모양, 혹은 세 개의 열벡터를 옆으로 붙인 모양이라고 생각 가능
