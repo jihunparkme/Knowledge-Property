@@ -40,9 +40,7 @@
 
 - 어떤 함수가 선형(linear)일 때, 그 함수의 성질
 
-   <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />
-  
-  
+   <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />,   
   
   <img src="..\img\DRW00008198225d.gif" alt="img" style="zoom:150%;" />  
 
