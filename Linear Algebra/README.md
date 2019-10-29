@@ -388,7 +388,8 @@
   3.    <img src="..\img\vector58.png" alt="png" />
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
-     <img src="..\img\vector59.png" alt="png" />
+     
+      <img src="..\img\vector59.png" alt="png" />
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
