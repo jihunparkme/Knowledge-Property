@@ -213,7 +213,8 @@
   
 - AB = C 일 때, C 의 성분 i, j 는
   
- <img src="..\img\vector28.png" alt="png" />
+
+   <img src="..\img\vector28.png" alt="png" />
   
 - 덧셈, 곱셈이 가능한 행렬에 적용되는 곱셈 성질
   <img src="..\img\vector29.png" alt="png" />
