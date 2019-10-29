@@ -80,9 +80,8 @@
 ### 벡터의 실수배
 
 - 정의
-  
- <img src="..\img\vector4.png" alt="png" />
-  
+  <img src="..\img\vector4.png" alt="png" />
+
 - 2 X (1, 2, 3) = (2, 4, 6)
 
 - 덧셈이 가능한 벡터들에 적용되는 실수배 성질들
@@ -106,9 +105,8 @@
 
 - 직교(orthogonal)
   - 영벡터가 아닌 두 벡터의 내적이 0인 경우
-    
-   <img src="..\img\vector8.png" alt="png" />
-  
+    <img src="..\img\vector8.png" alt="png" />
+
 - 내적의 성질
   <img src="..\img\vector9.png" alt="png" />
 
