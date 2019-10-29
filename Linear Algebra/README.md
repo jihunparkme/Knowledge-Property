@@ -241,14 +241,15 @@
 
 - 정사각행렬은 자기 자신끼리 곱셈이 가능
 
-  <img src="..\img\vector33.png" alt="png" />
+   <img src="..\img\vector33.png" alt="png" />
 
 - 행렬의 거듭제곱은 교환법칙이 성립
   <img src="..\img\vector34.png" alt="png" />
 
 - 지수법칙
   
- <img src="..\img\Matrix1.png" alt="png" />
+
+   <img src="..\img\Matrix1.png" alt="png" />
   
 - 행렬의 곱셉의 교환법칙
   - 교환법칙 성립 X
