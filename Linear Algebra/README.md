@@ -1,5 +1,3 @@
-
-
 ##  Table of Contents
 
 -  [Linear algebra](#Linear-algebra)
@@ -21,15 +19,18 @@
 ##  **summary** 
 
 - [역행렬](#역행렬)
-  <img src="..\img\Matrix6.png" alt="png" />
+  
+   <img src="..\img\Matrix6.png" alt="png" />
 - [행렬식](#행렬식(Determinant))
   
   마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
 - [고유값과 고유벡터](#고유값과-고유벡터)
   - 고유값(eigenvalue)
-    - <img src="..\img\vector74.png" alt="png"  />
+    
+    <img src="..\img\vector74.png" alt="png"  />
   - 고유벡터(eigenvector)
-    - <img src="..\img\vector75.png" alt="png"  />
+    
+     <img src="..\img\vector75.png" alt="png" style="zoom:90%;" />
 
 <Br>
 
@@ -38,7 +39,8 @@
 - 행렬(Matrix)과 벡터(Vector)
 - 어떤 함수가 선형(linear)일 때, 그 함수의 성질
 
-  <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />
+   <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />
+  
   <img src="..\img\DRW00008198225d.gif" alt="img" style="zoom:150%;" />  
 
 <br>
