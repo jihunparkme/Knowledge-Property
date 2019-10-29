@@ -1,4 +1,4 @@
-#  Table of Contents
+#   Table of Contents
 
 -  [Linear algebra](#Linear-algebra)
 
@@ -117,8 +117,9 @@
 
 - 벡터의 표현법(3, 4) 과 좌표의 표현법 A(3, 4)
   
+
  <img src="..\img\vector11.png" alt="png" />
-   
+
     <img src="..\img\vector13.png" alt="png" />
 
 - 복소평면에서는 복소수를 좌표평면위에 나타내기 위해 x축을 실수축, y축을 허수축으로 잡음
@@ -388,8 +389,6 @@
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
      
-     
-     
       <img src="..\img\vector59.png" alt="png" />
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
@@ -408,7 +407,7 @@
 - 2차 정사각행렬의 행렬식의 절대값 = 두 벡터로 이루어진 평행사변형의 넓이
 
   -  <img src="..\img\vector64.png" alt="png" />
-    
+  
 
      <img src="..\img\vector63.png" alt="png" />
 
@@ -481,8 +480,7 @@
 
 - 공식
   
-
- <img src="..\img\vector84.png" alt="png"  />
+   <img src="..\img\vector84.png" alt="png"  />
 
 - 정체
   <img src="..\img\vector85.png" alt="png"  />
@@ -518,8 +516,7 @@
 - 함수(변환)을 행렬로 표현할 수 있음
   
   - 함수의 합성과 행렬의 곱의 비교
-    
-     <img src="..\img\vector89.png" alt="png"  />
+    <img src="..\img\vector89.png" alt="png"  />
 
 ### 행렬과 일차변환
 
