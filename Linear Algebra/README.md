@@ -160,8 +160,9 @@
 - 수를 직사각형 모양으로 배열한 것
 - 각각의 수를 그 행렬의 성분으라고 부름
   - two by three matrix
-    <img src="..\img\vector19.png" alt="png" />
-
+    
+   <img src="..\img\vector19.png" alt="png" />
+  
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
 - 두 개의 행벡터를 세로로 쌓은 모양, 혹은 세 개의 열벡터를 옆으로 붙인 모양이라고 생각 가능
 
@@ -194,29 +195,35 @@
   <img src="..\img\vector24.png" alt="png" />
 
 - 행렬의 곱
-  <img src="..\img\vector25.png" alt="png" />
+  
+   <img src="..\img\vector25.png" alt="png" />
   <img src="..\img\vector26.png" alt="png" />
-  <img src="..\img\vector27.png" alt="png" />
-
+<img src="..\img\vector27.png" alt="png" />
+  
 - AB = C 일 때, C 의 성분 i, j 는
-  <img src="..\img\vector28.png" alt="png" />
-
+  
+ <img src="..\img\vector28.png" alt="png" />
+  
 - 덧셈, 곱셈이 가능한 행렬에 적용되는 곱셈 성질
   <img src="..\img\vector29.png" alt="png" />
 
 ### 단위행렬
 
 -  실수 1은 곱셈에 대한 항등원
-  <img src="..\img\vector32.png" alt="png" />
+  
+   <img src="..\img\vector32.png" alt="png" />
 - 마찬가지로 정사각행렬의 곱셈에 대한 항등원을 단위행렬이라고 불림
   - 기호
-    <img src="..\img\Matrix2.png" alt="png" />
+    
+     <img src="..\img\Matrix2.png" alt="png" />
 - 정사각행렬 A의 AE = EA = A 를 만족하는 단위행렬이 존재 
   - 단위행렬과의 곱은 예외로 언제나 교환법칙이 성립
   - 이차 단위행렬
-    <img src="..\img\vector30.png" alt="png" />
+    
+     <img src="..\img\vector30.png" alt="png" />
   - 삼차 단위행렬
-    <img src="..\img\vector31.png" alt="png" />
+    
+     <img src="..\img\vector31.png" alt="png" />
 
 ### 행렬의 거듭제곱
 
@@ -228,8 +235,9 @@
   <img src="..\img\vector34.png" alt="png" />
 
 - 지수법칙
-  <img src="..\img\Matrix1.png" alt="png" />
-
+  
+ <img src="..\img\Matrix1.png" alt="png" />
+  
 - 행렬의 곱셉의 교환법칙
   - 교환법칙 성립 X
     <img src="..\img\Matrix3.png" alt="png" />
