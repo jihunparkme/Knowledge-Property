@@ -37,6 +37,7 @@
 ## Linear algebra
 
 - 행렬(Matrix)과 벡터(Vector)
+
 - 어떤 함수가 선형(linear)일 때, 그 함수의 성질
 
    <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />
@@ -68,8 +69,7 @@
 
 - 차원이 같은 벡터끼리만 연산이 가능
 - (1, 2, 3) + (4, 5, 6) = (5, 7, 9)
-
-<img src="..\img\vector2.png" alt="png" />
+  <img src="..\img\vector2.png" alt="png" />
 
 - 영벡터(0, 0, 0)는 벡터의 덧셈에 대한 항등원
 
