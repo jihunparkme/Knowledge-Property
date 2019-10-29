@@ -377,31 +377,71 @@
   - <img src="..\img\vector74.png" alt="png"  />
 
 - 고유벡터(eigenvector)
-  - <img src="..\img\vector75.png" alt="png"  />
+  -  <img src="..\img\vector75.png" alt="png" style="zoom:85%;" />
 
 - 위 식에서 고유값은 3, 고유벡터는 <img src="..\img\vector76.png" alt="png"  />
 
 ### 닮음변환(=유사변환)
 
+- similar transformation
 - 행렬 A를 역행렬이 존재하는 행렬 P와 다음과 같이 곱하여 새로운 행렬 B를 만드는 과정
   - 이때, A와 B는 similar 하다고 함
     <img src="..\img\vector77.png" alt="png"  />
   - <img src="..\img\vector78.png" alt="png"  /> 일 경우, <img src="..\img\vector79.png" alt="png"  />
-
 - 닮음변환의 성질
   <img src="..\img\vector80.png" alt="png"  />
-
 - 대각행렬(diagonal matrix)
   <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
   - 단위행렬이 대표적인 대각행렬
 - 대각화(diagonalization)
   - 정사각행렬 A에 적당한 정사각행렬 P를 이용하여 닮음변환을 시켜 대각행렬을 만드는 과정을 대각화
-
 - n차 정사각행렬의 행렬식은 고유값들의 곱과 같고, 대각합은 고유값들의 합과 같음
   <img src="..\img\vector82.png" alt="png"  />
   <img src="..\img\vector83.png" alt="png"  />
 
+### 케일리-해밀턴 정리
 
+- Cayley-Hamilton's Theorem
+
+- 공식
+  <img src="..\img\vector84.png" alt="png"  />
+
+- 정체
+  <img src="..\img\vector85.png" alt="png"  />
+- 케일리-해밀턴 정리는 보통 높은 차수의 행렬에 관한 식을 낮은 차수로 변형시킬 때 사용
+  - 복잡한 행렬의 곱(거듭제곱)에서 유용하게 사용
+
+### 행렬과 함수
+
+- 함수(function)
+
+  <img src="..\img\vector86.png" alt="png"  />
+
+  - 넓은 의미에서 함수는 **사상(mapping)**과 같은 뜻으로 사용
+
+    좁은 의미에서는 X, Y가 수의 집합일 경우, 특히 X가 자연수의 집합일 경우에는 **수열(sequerence)** 
+
+  - **변환(transformation)**
+
+    - 사상 가운데 공간(space)에서 같은 공간을 대응하는 사상
+    - 변환의 예로는 좌표평면에서 평행이동, 대칭이동, 회전변환, 확대･축소변환 등
+
+  -  **연산자(operator)**
+
+    - 사상 가운데 X, Y가 함수의 집합일 때
+    - 연산자란 <img src="..\img\vector87.png" alt="png"  /> , 미분, 적분이 포함
+
+  - 함수의 사용
+     <img src="..\img\vector88.png" alt="png" style="zoom:90%;" />
+
+  - 함수(변환)을 행렬로 표현할 수 있음
+
+  - 함수의 합성과 행렬의 곱의 비교
+    <img src="..\img\vector89.png" alt="png"  />
+
+### 행렬과 일차변환
+
+- linear transformation
 
 
 
