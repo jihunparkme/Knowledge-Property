@@ -291,7 +291,8 @@
 
 - 단위행렬, 거듭제곱, 역행렬의 정의
   
- <img src="..\img\vector35.png" alt="png" />
+
+   <img src="..\img\vector35.png" alt="png" />
   
 - 공통점
   1. 모두 **정사각 행렬**이어야 함
