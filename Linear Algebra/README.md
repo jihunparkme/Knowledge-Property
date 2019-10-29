@@ -198,7 +198,8 @@
   
    <img src="..\img\vector25.png" alt="png" />
   <img src="..\img\vector26.png" alt="png" />
-<img src="..\img\vector27.png" alt="png" />
+
+  <img src="..\img\vector27.png" alt="png" />
   
 - AB = C 일 때, C 의 성분 i, j 는
   
@@ -240,11 +241,13 @@
   
 - 행렬의 곱셉의 교환법칙
   - 교환법칙 성립 X
-    <img src="..\img\Matrix3.png" alt="png" />
+    
+     <img src="..\img\Matrix3.png" alt="png" />
   - 정사각행렬의 거듭제곱과 단위행렬에 대해서는 교환법칙이 성립
     <img src="..\img\Matrix4.png" alt="png" />
   - 곱셈공식과 매우 유사
-    <img src="..\img\Matrix5.png" alt="png" />
+    
+     <img src="..\img\Matrix5.png" alt="png" />
 
 ### 역행렬
 
@@ -260,36 +263,44 @@
   - X = A<sup>-1</sup>
   - 반대로 A는 X의 역행렬이라고도 할 수 있음
 - 공식
-  <img src="..\img\Matrix6.png" alt="png" />
+  
+   <img src="..\img\Matrix6.png" alt="png" />
 
 ### 역행렬의 성질
 
 - 행렬 A, B가 정사각행렬일 때,
-  <img src="..\img\Matrix7.png" alt="png" />
+  
+   <img src="..\img\Matrix7.png" alt="png" />
+  
   - 행렬 A, B의 역행렬이 존재할 때,
     <img src="..\img\Matrix8.png" alt="png" />
 
 ###  단위행렬, 거듭제곱, 역행렬의 공통점
 
 - 단위행렬, 거듭제곱, 역행렬의 정의
-  <img src="..\img\vector35.png" alt="png" />
-
+  
+ <img src="..\img\vector35.png" alt="png" />
+  
 - 공통점
   1. 모두 **정사각 행렬**이어야 함
   2. **단위행렬과**의 곱, 거듭제곱, 역행열과의 곱은 언제나 교환법칙이 성립
      - 교환법칙이 성립하는 경우
-       <img src="..\img\vector36.png" alt="png" />
+       
+        <img src="..\img\vector36.png" alt="png" />
      - 행렬 식에서 등장 행렬이 <img src="..\img\vector37.png" alt="png" /> 밖에 없다면 교환법칙이 무조건 성립
 
 ### 대각합(Trace)
 
 - 정사각행렬의 주대각성분의 합으로 정의
-  <img src="..\img\vector39.png" alt="png" style="zoom: 67%;" />
+  
+   <img src="..\img\vector39.png" alt="png" style="zoom: 67%;" />
 - 행렬 A의 대각합은 tr(A) 로 표현
-  <img src="..\img\vector38.png" alt="png" />
-
+  
+ <img src="..\img\vector38.png" alt="png" />
+  
 - 대각합의 성질
-  <img src="..\img\vector40.png" alt="png" />
+  
+   <img src="..\img\vector40.png" alt="png" />
 
 ### 행렬식(Determinant)
 
@@ -297,44 +308,55 @@
 
 - 먼저 치환에 대한 이해가  필요
   - 치환 : 임의의 두 수의 위치는 바꾸는 연산
-    <img src="..\img\vector41.png" alt="png" />
+    
+     <img src="..\img\vector41.png" alt="png" />
   - odd permutation
+    
     - 홀수번의 치환만을 해야 하는 수의 배열
   - even permutation
+    
     - 짝수번의 치환만을 해야 하는 수의 배열	
   - 네 개의 수로 만들 수 있는 수의 배열은 4! = 24가지
+  
     - 이 가운데 12가지는 even permutation, 나머지는 odd permutation
   - 치환 시 화살표와 같은 방향의 순서를 가지면 even, 반대방향의 순서를 가지면 odd
-    <img src="..\img\vector42.png" alt="png" />
-
+    
+     <img src="..\img\vector42.png" alt="png" />
+  
 - 행렬식 
 
   - 행렬식 표현 기호
-    <img src="..\img\vector46.png" alt="png" />
-
-  - 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
-
+    
+ <img src="..\img\vector46.png" alt="png" />
+    
+- 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
+  
     - 세 수를 선택하는 방법은 3! = 6 가지
-      <img src="..\img\vector44.png" alt="png" />
-
+    
+     <img src="..\img\vector44.png" alt="png" />
+    
     - permutation을 이용하여 행렬식 구하기
 
       -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
-
-      -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
+  
+    -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
       <img src="..\img\vector45.png" alt="png" />
-
+  
   - 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
 ### 회전변환행렬 유도
 - 기저 벡터인 (1,0)과 (0,1)를 θ만큼 회전
-  <img src="..\img\vector50.png" alt="png" />
+  
+   <img src="..\img\vector50.png" alt="png" />
+  
   -   (1,0)을 θ만큼 회전하면 (cosθ,sinθ), (0,1)을 θ만큼 회전하면 (−sin⁡θ,cos⁡θ)
   - 회전 행렬 R은 선형 변환이므로 다음이 성립
-    <img src="..\img\vector51.png" alt="png" />
+    
+     <img src="..\img\vector51.png" alt="png" />
   -  R(1,0)과 R(0,1)이 (cos⁡θ,sin⁡θ), (−sinθ,cosθ)이므로, 대입하면 유도 
     <img src="..\img\vector52.png" alt="png" />
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
-    <img src="..\img\vector54.png" alt="png" />
+    
+     <img src="..\img\vector54.png" alt="png" />
 
 ### 행렬식의 성질
 
@@ -343,19 +365,20 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.  <img src="..\img\vector57.png" alt="png" />
+  2.   <img src="..\img\vector57.png" alt="png" />
 
   3.  <img src="..\img\vector58.png" alt="png" />
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
-     <img src="..\img\vector59.png" alt="png" />
-
+     
+ <img src="..\img\vector59.png" alt="png" />
+     
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
-     <img src="..\img\vector61.png" alt="png" />
-
+   <img src="..\img\vector61.png" alt="png" />
+  
      -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
-     -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
-
+   -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
+  
      - <img src="..\img\vector62.png" alt="png" />
 
 ### 행렬식의 기하학적 의미
@@ -375,22 +398,26 @@
 ### 행렬과 연립일차방정식
 
 - 연립일차방정식을 행렬로 취급할 수 있음
-  -  <img src="..\img\vector66.png" alt="png" />
-  -  <img src="..\img\vector67.png" alt="png" style="zoom:80%;" />
+  -   <img src="..\img\vector66.png" alt="png" />
+  -   <img src="..\img\vector67.png" alt="png" style="zoom:80%;" />
   - <img src="..\img\vector68.png" alt="png"  />
 
 - 역행렬이 존재하지 않는 연립일차방정식
   - 역행렬이 존재하지 않다는 것은 해가 없거나, 해가 무수히 많거나 둘 중 하나
     - 두 식이 같으면, 해가 무수히 많음
-      <img src="..\img\vector69.png" alt="png"  />
+      
+       <img src="..\img\vector69.png" alt="png"  />
     - 두 식이 다르면, 해가 없음
-      <img src="..\img\vector70.png" alt="png"  />
+      
+       <img src="..\img\vector70.png" alt="png"  />
 - 정리
   - <img src="..\img\vector71.png" alt="png"  />
   - 연립방정식의 해가 존재할 때,
-    <img src="..\img\vector72.png" alt="png"  />
+    
+     <img src="..\img\vector72.png" alt="png"  />
   - 연립방적식의 해가 존재하지 않을 때, 혹은 ~~이외의 해가 존재할 때,
-    <img src="..\img\vector73.png" alt="png"  />
+    
+     <img src="..\img\vector73.png" alt="png"  />
 
 ### 고유값과 고유벡터
 
@@ -407,14 +434,19 @@
 - similar transformation
 - 행렬 A를 역행렬이 존재하는 행렬 P와 다음과 같이 곱하여 새로운 행렬 B를 만드는 과정
   - 이때, A와 B는 similar 하다고 함
-    <img src="..\img\vector77.png" alt="png"  />
+    
+     <img src="..\img\vector77.png" alt="png"  />
   - <img src="..\img\vector78.png" alt="png"  /> 일 경우, <img src="..\img\vector79.png" alt="png"  />
 - 닮음변환의 성질
-  <img src="..\img\vector80.png" alt="png"  />
+  
+   <img src="..\img\vector80.png" alt="png"  />
 - 대각행렬(diagonal matrix)
-  <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
+  
+   <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
+  
   - 단위행렬이 대표적인 대각행렬
 - 대각화(diagonalization)
+  
   - 정사각행렬 A에 적당한 정사각행렬 P를 이용하여 닮음변환을 시켜 대각행렬을 만드는 과정을 대각화
 - n차 정사각행렬의 행렬식은 고유값들의 곱과 같고, 대각합은 고유값들의 합과 같음
   <img src="..\img\vector82.png" alt="png"  />
@@ -425,11 +457,13 @@
 - Cayley-Hamilton's Theorem
 
 - 공식
-  <img src="..\img\vector84.png" alt="png"  />
-
+  
+ <img src="..\img\vector84.png" alt="png"  />
+  
 - 정체
   <img src="..\img\vector85.png" alt="png"  />
 - 케일리-해밀턴 정리는 보통 높은 차수의 행렬에 관한 식을 낮은 차수로 변형시킬 때 사용
+  
   - 복잡한 행렬의 곱(거듭제곱)에서 유용하게 사용
 
 ### 행렬과 함수
@@ -453,12 +487,14 @@
     - 연산자란 <img src="..\img\vector87.png" alt="png"  /> , 미분, 적분이 포함
 
   - 함수의 사용
-     <img src="..\img\vector88.png" alt="png" style="zoom:90%;" />
-
-  - 함수(변환)을 행렬로 표현할 수 있음
-
+     
+ <img src="..\img\vector88.png" alt="png" style="zoom:90%;" />
+     
+- 함수(변환)을 행렬로 표현할 수 있음
+  
   - 함수의 합성과 행렬의 곱의 비교
-    <img src="..\img\vector89.png" alt="png"  />
+    
+     <img src="..\img\vector89.png" alt="png"  />
 
 ### 행렬과 일차변환
 
