@@ -80,8 +80,9 @@
 ### 벡터의 실수배
 
 - 정의
-   <img src="..\img\vector4.png" alt="png" />
-
+  
+ <img src="..\img\vector4.png" alt="png" />
+  
 - 2 X (1, 2, 3) = (2, 4, 6)
 
 - 덧셈이 가능한 벡터들에 적용되는 실수배 성질들
@@ -105,18 +106,20 @@
 
 - 직교(orthogonal)
   - 영벡터가 아닌 두 벡터의 내적이 0인 경우
-    <img src="..\img\vector8.png" alt="png" />
-
+    
+   <img src="..\img\vector8.png" alt="png" />
+  
 - 내적의 성질
   <img src="..\img\vector9.png" alt="png" />
 
 ### 벡터와 좌표
 
 - 벡터의 표현법(3, 4) 과 좌표의 표현법 A(3, 4)
-  <img src="..\img\vector11.png" alt="png" />
-
-  <img src="..\img\vector13.png" alt="png" />
-
+  
+ <img src="..\img\vector11.png" alt="png" />
+  
+<img src="..\img\vector13.png" alt="png" />
+  
 - 복소평면에서는 복소수를 좌표평면위에 나타내기 위해 x축을 실수축, y축을 허수축으로 잡음
 
   - (-3, 5) 는 복소수 z = -3 + 5i 
