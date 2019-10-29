@@ -1,3 +1,5 @@
+
+
 ##  Table of Contents
 
 -  [Linear algebra](#Linear-algebra)
@@ -40,9 +42,9 @@
 
 - 어떤 함수가 선형(linear)일 때, 그 함수의 성질
 
-   <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:150%;" />,   
+   <img src="..\img\DRW000081982259.gif" alt="img" style="zoom:170%;" />,   
   
-  <img src="..\img\DRW00008198225d.gif" alt="img" style="zoom:150%;" />  
+  <img src="..\img\DRW00008198225d.gif" alt="img" style="zoom:170%;" />  
 
 <br>
 
@@ -80,8 +82,9 @@
 ### 벡터의 실수배
 
 - 정의
-  <img src="..\img\vector4.png" alt="png" />
-
+  
+ <img src="..\img\vector4.png" alt="png" />
+  
 - 2 X (1, 2, 3) = (2, 4, 6)
 
 - 덧셈이 가능한 벡터들에 적용되는 실수배 성질들
