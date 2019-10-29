@@ -80,8 +80,9 @@
 ### 벡터의 실수배
 
 - 정의
-  <img src="..\img\vector4.png" alt="png" />
-
+  
+ <img src="..\img\vector4.png" alt="png" />
+  
 - 2 X (1, 2, 3) = (2, 4, 6)
 
 - 덧셈이 가능한 벡터들에 적용되는 실수배 성질들
@@ -105,8 +106,9 @@
 
 - 직교(orthogonal)
   - 영벡터가 아닌 두 벡터의 내적이 0인 경우
-    <img src="..\img\vector8.png" alt="png" />
-
+    
+   <img src="..\img\vector8.png" alt="png" />
+  
 - 내적의 성질
   <img src="..\img\vector9.png" alt="png" />
 
@@ -125,11 +127,12 @@
 ### 벡터와 복소수
 
 - 벡터와 복소수의 관계
-  <img src="..\img\vector14.png" alt="png" />
-
+  
+ <img src="..\img\vector14.png" alt="png" />
+  
   <br>
-  <img src="..\img\vector15.png" alt="png" />
-
+<img src="..\img\vector15.png" alt="png" />
+  
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
 
 ### 벡터와 함수
@@ -139,10 +142,13 @@
   - 이차함수의 연산
     <img src="..\img\vector17.png" alt="png" />
   - 벡터의 연산
-    <img src="..\img\vector18.png" alt="png" />
+    
+     <img src="..\img\vector18.png" alt="png" />
   - 이와 같은 대응 관계를 동형사상(isomorphism)
 - 함수의 연산과 벡터의 연산
-  <img src="..\img\vector16.png" alt="png" />
+  
+   <img src="..\img\vector16.png" alt="png" />
+  
   - 이차함수를 벡터로도 표현 가능
 
 <br>
