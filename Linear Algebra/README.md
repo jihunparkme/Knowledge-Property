@@ -354,6 +354,7 @@
      <img src="..\img\vector51.png" alt="png" />
   -  R(1,0)과 R(0,1)이 (cos⁡θ,sin⁡θ), (−sinθ,cosθ)이므로, 대입하면 유도 
     <img src="..\img\vector52.png" alt="png" />
+    
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
     
      <img src="..\img\vector54.png" alt="png" />
@@ -374,11 +375,12 @@
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
+   
    <img src="..\img\vector61.png" alt="png" />
-  
-     -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
-   -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
-  
+     
+   -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
+  -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
+     
      - <img src="..\img\vector62.png" alt="png" />
 
 ### 행렬식의 기하학적 의미
