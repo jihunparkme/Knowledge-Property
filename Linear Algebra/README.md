@@ -1,5 +1,3 @@
-
-
 ##  Table of Contents
 
 -  [Linear algebra](#Linear-algebra)
@@ -82,9 +80,8 @@
 ### 벡터의 실수배
 
 - 정의
-  
- <img src="..\img\vector4.png" alt="png" />
-  
+   <img src="..\img\vector4.png" alt="png" />
+
 - 2 X (1, 2, 3) = (2, 4, 6)
 
 - 덧셈이 가능한 벡터들에 적용되는 실수배 성질들
