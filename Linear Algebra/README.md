@@ -391,10 +391,10 @@
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
    
+   <img src="..\img\vector61.png" alt="png" />
+     
+   -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
   
-      <img src="..\img\vector61.png" alt="png" />
-   
-  -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
      -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
      
      - <img src="..\img\vector62.png" alt="png" />
