@@ -167,6 +167,7 @@
   - two by three matrix
     
   
+    
      <img src="..\img\vector19.png" alt="png" />
   
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
