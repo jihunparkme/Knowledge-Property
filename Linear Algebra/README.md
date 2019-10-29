@@ -131,10 +131,12 @@
 
 - 벡터와 복소수의 관계
   
- <img src="..\img\vector14.png" alt="png" />
+
+   <img src="..\img\vector14.png" alt="png" />
   
-  <br>
-<img src="..\img\vector15.png" alt="png" />
+<br>
+  
+   <img src="..\img\vector15.png" alt="png" />
   
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
 
