@@ -384,9 +384,9 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.  <img src="..\img\vector57.png" alt="png" />
+  2.   <img src="..\img\vector57.png" alt="png" />
 
-  3.  <img src="..\img\vector58.png" alt="png" />
+  3.   <img src="..\img\vector58.png" alt="png" />
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
      <img src="..\img\vector59.png" alt="png" />
@@ -398,7 +398,7 @@
   
    -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
   
-     -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
+   -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
   
      - <img src="..\img\vector62.png" alt="png" />
 
