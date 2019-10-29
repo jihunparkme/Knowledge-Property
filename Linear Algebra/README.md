@@ -16,6 +16,20 @@
 
   <br>
 
+##  **summary** 
+
+- [역행렬](#역행렬)
+  <img src="..\img\Matrix6.png" alt="png" />
+- [행렬식](#행렬식(Determinant))
+  마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
+- [고유값과 고유벡터](#고유값과-고유벡터)
+  - 고유값(eigenvalue)
+    - <img src="..\img\vector74.png" alt="png"  />
+  - 고유벡터(eigenvector)
+    - <img src="..\img\vector75.png" alt="png"  />
+
+<Br>
+
 ## Linear algebra
 
 - 행렬(Matrix)과 벡터(Vector)
@@ -359,9 +373,33 @@
 
 ### 고유값과 고유벡터
 
+- 고유값(eigenvalue)
+  - <img src="..\img\vector74.png" alt="png"  />
 
+- 고유벡터(eigenvector)
+  - <img src="..\img\vector75.png" alt="png"  />
 
+- 위 식에서 고유값은 3, 고유벡터는 <img src="..\img\vector76.png" alt="png"  />
 
+### 닮음변환(=유사변환)
+
+- 행렬 A를 역행렬이 존재하는 행렬 P와 다음과 같이 곱하여 새로운 행렬 B를 만드는 과정
+  - 이때, A와 B는 similar 하다고 함
+    <img src="..\img\vector77.png" alt="png"  />
+  - <img src="..\img\vector78.png" alt="png"  /> 일 경우, <img src="..\img\vector79.png" alt="png"  />
+
+- 닮음변환의 성질
+  <img src="..\img\vector80.png" alt="png"  />
+
+- 대각행렬(diagonal matrix)
+  <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
+  - 단위행렬이 대표적인 대각행렬
+- 대각화(diagonalization)
+  - 정사각행렬 A에 적당한 정사각행렬 P를 이용하여 닮음변환을 시켜 대각행렬을 만드는 과정을 대각화
+
+- n차 정사각행렬의 행렬식은 고유값들의 곱과 같고, 대각합은 고유값들의 합과 같음
+  <img src="..\img\vector82.png" alt="png"  />
+  <img src="..\img\vector83.png" alt="png"  />
 
 
 
