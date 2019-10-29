@@ -388,6 +388,7 @@
 
   3.   <img src="..\img\vector58.png" alt="png" />
      
+     
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
      
      
@@ -409,8 +410,9 @@
 - 2차 정사각행렬의 행렬식의 절대값 = 두 벡터로 이루어진 평행사변형의 넓이
 
   -  <img src="..\img\vector64.png" alt="png" />
+    
 
-    <img src="..\img\vector63.png" alt="png" />
+     <img src="..\img\vector63.png" alt="png" />
 
   -  <img src="..\img\vector65.png" alt="png" />
 
