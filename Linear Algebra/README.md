@@ -117,9 +117,11 @@
 
 - 벡터의 표현법(3, 4) 과 좌표의 표현법 A(3, 4)
   
- <img src="..\img\vector11.png" alt="png" />
+
+   <img src="..\img\vector11.png" alt="png" />
+
   
-<img src="..\img\vector13.png" alt="png" />
+  <img src="..\img\vector13.png" alt="png" />
   
 - 복소평면에서는 복소수를 좌표평면위에 나타내기 위해 x축을 실수축, y축을 허수축으로 잡음
 
