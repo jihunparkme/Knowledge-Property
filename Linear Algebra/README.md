@@ -389,7 +389,8 @@
   3.   <img src="..\img\vector58.png" alt="png" />
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
-     <img src="..\img\vector59.png" alt="png" />
+     
+      <img src="..\img\vector59.png" alt="png" />
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
@@ -406,11 +407,11 @@
 
 - 2차 정사각행렬의 행렬식의 절대값 = 두 벡터로 이루어진 평행사변형의 넓이
 
-  - <img src="..\img\vector64.png" alt="png" />
+  -  <img src="..\img\vector64.png" alt="png" />
 
     <img src="..\img\vector63.png" alt="png" />
 
-  - <img src="..\img\vector65.png" alt="png" />
+  -  <img src="..\img\vector65.png" alt="png" />
 
 - 3차 정사각행렬의 행렬식의 절대값 = 세 벡터로 이루어진 평행육면체의 부피
 
@@ -419,7 +420,7 @@
 ### 행렬과 연립일차방정식
 
 - 연립일차방정식을 행렬로 취급할 수 있음
-  -   <img src="..\img\vector66.png" alt="png" />
+  -    <img src="..\img\vector66.png" alt="png" />
   -   <img src="..\img\vector67.png" alt="png" style="zoom:80%;" />
   - <img src="..\img\vector68.png" alt="png"  />
 
