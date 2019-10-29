@@ -306,7 +306,7 @@
 
 - 정사각행렬의 주대각성분의 합으로 정의
   
-   <img src="..\img\vector39.png" alt="png" style="zoom: 67%;" />
+   <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
 - 행렬 A의 대각합은 tr(A) 로 표현
   
  <img src="..\img\vector38.png" alt="png" />
@@ -340,19 +340,20 @@
 
   - 행렬식 표현 기호
     
- <img src="..\img\vector46.png" alt="png" />
-    
-- 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
-  
-    - 세 수를 선택하는 방법은 3! = 6 가지
-    
-     <img src="..\img\vector44.png" alt="png" />
-    
-    - permutation을 이용하여 행렬식 구하기
 
-      -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+     <img src="..\img\vector46.png" alt="png" />
   
-    -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
+  - 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
+  
+  - 세 수를 선택하는 방법은 3! = 6 가지
+      
+   <img src="..\img\vector44.png" alt="png" />
+      
+  - permutation을 이용하여 행렬식 구하기
+  
+      -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+
+      -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
       <img src="..\img\vector45.png" alt="png" />
   
   - 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
