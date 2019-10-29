@@ -108,7 +108,7 @@
 - 직교(orthogonal)
   - 영벡터가 아닌 두 벡터의 내적이 0인 경우
     
-   <img src="..\img\vector8.png" alt="png" />
+    <img src="..\img\vector8.png" alt="png" />
   
 - 내적의 성질
   <img src="..\img\vector9.png" alt="png" />
