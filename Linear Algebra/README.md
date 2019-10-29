@@ -135,7 +135,6 @@
 
 <br>
 
-
 ​		<img src="..\img\vector15.png" alt="png" />
 
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
@@ -168,7 +167,7 @@
     
   
     
-      <img src="..\img\vector19.png" alt="png" />
+       <img src="..\img\vector19.png" alt="png" />
   
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
 - 두 개의 행벡터를 세로로 쌓은 모양, 혹은 세 개의 열벡터를 옆으로 붙인 모양이라고 생각 가능
@@ -214,7 +213,7 @@
 - AB = C 일 때, C 의 성분 i, j 는
   
 
-    <img src="..\img\vector28.png" alt="png" />
+     <img src="..\img\vector28.png" alt="png" />
   
 - 덧셈, 곱셈이 가능한 행렬에 적용되는 곱셈 성질
   <img src="..\img\vector29.png" alt="png" />
@@ -223,19 +222,19 @@
 
 -  실수 1은 곱셈에 대한 항등원
   
-    <img src="..\img\vector32.png" alt="png" />
+     <img src="..\img\vector32.png" alt="png" />
 - 마찬가지로 정사각행렬의 곱셈에 대한 항등원을 단위행렬이라고 불림
   - 기호
     
-      <img src="..\img\Matrix2.png" alt="png" />
+       <img src="..\img\Matrix2.png" alt="png" />
 - 정사각행렬 A의 AE = EA = A 를 만족하는 단위행렬이 존재 
   - 단위행렬과의 곱은 예외로 언제나 교환법칙이 성립
   - 이차 단위행렬
     
-      <img src="..\img\vector30.png" alt="png" />
+       <img src="..\img\vector30.png" alt="png" />
   - 삼차 단위행렬
     
-      <img src="..\img\vector31.png" alt="png" />
+       <img src="..\img\vector31.png" alt="png" />
 
 ### 행렬의 거듭제곱
 
@@ -249,17 +248,17 @@
 - 지수법칙
   
 
-    <img src="..\img\Matrix1.png" alt="png" />
+     <img src="..\img\Matrix1.png" alt="png" />
   
 - 행렬의 곱셉의 교환법칙
   - 교환법칙 성립 X
     
-     <img src="..\img\Matrix3.png" alt="png" />
+      <img src="..\img\Matrix3.png" alt="png" />
   - 정사각행렬의 거듭제곱과 단위행렬에 대해서는 교환법칙이 성립
     <img src="..\img\Matrix4.png" alt="png" />
   - 곱셈공식과 매우 유사
     
-      <img src="..\img\Matrix5.png" alt="png" />
+       <img src="..\img\Matrix5.png" alt="png" />
 
 ### 역행렬
 
@@ -282,7 +281,7 @@
 
 - 행렬 A, B가 정사각행렬일 때,
   
-    <img src="..\img\Matrix7.png" alt="png" />
+     <img src="..\img\Matrix7.png" alt="png" />
   
   - 행렬 A, B의 역행렬이 존재할 때,
     <img src="..\img\Matrix8.png" alt="png" />
@@ -292,25 +291,25 @@
 - 단위행렬, 거듭제곱, 역행렬의 정의
   
 
-    <img src="..\img\vector35.png" alt="png" />
+     <img src="..\img\vector35.png" alt="png" />
   
 - 공통점
   1. 모두 **정사각 행렬**이어야 함
   2. **단위행렬과**의 곱, 거듭제곱, 역행열과의 곱은 언제나 교환법칙이 성립
      - 교환법칙이 성립하는 경우
        
-         <img src="..\img\vector36.png" alt="png" />
+          <img src="..\img\vector36.png" alt="png" />
      - 행렬 식에서 등장 행렬이 <img src="..\img\vector37.png" alt="png" /> 밖에 없다면 교환법칙이 무조건 성립
 
 ### 대각합(Trace)
 
 - 정사각행렬의 주대각성분의 합으로 정의
   
-    <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
+     <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
 - 행렬 A의 대각합은 tr(A) 로 표현
   
 
-    <img src="..\img\vector38.png" alt="png" />
+     <img src="..\img\vector38.png" alt="png" />
   
 - 대각합의 성질
   
@@ -323,7 +322,7 @@
 - 먼저 치환에 대한 이해가  필요
   - 치환 : 임의의 두 수의 위치는 바꾸는 연산
     
-      <img src="..\img\vector41.png" alt="png" />
+       <img src="..\img\vector41.png" alt="png" />
   - odd permutation
     
     - 홀수번의 치환만을 해야 하는 수의 배열
@@ -335,14 +334,14 @@
     - 이 가운데 12가지는 even permutation, 나머지는 odd permutation
   - 치환 시 화살표와 같은 방향의 순서를 가지면 even, 반대방향의 순서를 가지면 odd
     
-      <img src="..\img\vector42.png" alt="png" />
+       <img src="..\img\vector42.png" alt="png" />
   
 - 행렬식 
 
   - 행렬식 표현 기호
     
 
-      <img src="..\img\vector46.png" alt="png" />
+       <img src="..\img\vector46.png" alt="png" />
   
   - 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
     
@@ -363,19 +362,19 @@
 ### 회전변환행렬 유도
 - 기저 벡터인 (1,0)과 (0,1)를 θ만큼 회전
   
-    <img src="..\img\vector50.png" alt="png" />
+     <img src="..\img\vector50.png" alt="png" />
   
   -   (1,0)을 θ만큼 회전하면 (cosθ,sinθ), (0,1)을 θ만큼 회전하면 (−sin⁡θ,cos⁡θ)
   - 회전 행렬 R은 선형 변환이므로 다음이 성립
     
-      <img src="..\img\vector51.png" alt="png" />
+       <img src="..\img\vector51.png" alt="png" />
   -  R(1,0)과 R(0,1)이 (cos⁡θ,sin⁡θ), (−sinθ,cosθ)이므로, 대입하면 유도 
     
-      <img src="..\img\vector52.png" alt="png" />
+       <img src="..\img\vector52.png" alt="png" />
     
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
     
-      <img src="..\img\vector54.png" alt="png" />
+       <img src="..\img\vector54.png" alt="png" />
 
 ### 행렬식의 성질
 
@@ -384,13 +383,12 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.   <img src="..\img\vector57.png" alt="png" />
+  2.    <img src="..\img\vector57.png" alt="png" />
 
-  3.   <img src="..\img\vector58.png" alt="png" />
+  3.    <img src="..\img\vector58.png" alt="png" />
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
-     
-      <img src="..\img\vector59.png" alt="png" />
+     <img src="..\img\vector59.png" alt="png" />
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
