@@ -348,12 +348,13 @@
   
   - 세 수를 선택하는 방법은 3! = 6 가지
       
-   <img src="..\img\vector44.png" alt="png" />
-      
-  - permutation을 이용하여 행렬식 구하기
-  
-      -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
 
+       <img src="..\img\vector44.png" alt="png" />
+    
+    - permutation을 이용하여 행렬식 구하기
+  
+    -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+  
       -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
       <img src="..\img\vector45.png" alt="png" />
   
@@ -368,7 +369,8 @@
     
      <img src="..\img\vector51.png" alt="png" />
   -  R(1,0)과 R(0,1)이 (cos⁡θ,sin⁡θ), (−sinθ,cosθ)이므로, 대입하면 유도 
-    <img src="..\img\vector52.png" alt="png" />
+    
+     <img src="..\img\vector52.png" alt="png" />
     
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
     
