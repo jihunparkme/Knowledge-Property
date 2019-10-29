@@ -125,67 +125,68 @@
     A A A
     ```
   
-- 주소의 가감산
+
+### 주소의 가감산
+
+- ex)
+  <img src="..\img\pointer9.png" alt="img"/>
+
+  ```c
+  #include <stdio.h>
   
-  - ex)
-    <img src="..\img\pointer9.png" alt="img"/>
+  int main() {
+  	char c = 'A';
+  	char* cp = NULL;
+  	char** cpp = NULL;
   
-    ```c
-    #include <stdio.h>
-    
-    int main() {
-    	char c = 'A';
-    	char* cp = NULL;
-    	char** cpp = NULL;
-    
-    	cp = &c;
-    	cpp = &cp;
-    
-        // 주소의 가산
-    	printf("%x %x %x \n", &c, &cp, &cpp);
-    	printf("%x %x %x \n", &c + 1, &cp + 1, &cpp + 1);
-    
-        // 값의 가산
-    	printf("%c %x %x \n", c, cp, cpp);
-    	printf("%c %x %x \n", c + 1, cp + 1, cpp + 1);
-    }
-    ```
+  	cp = &c;
+  	cpp = &cp;
   
-    ```
-    5af7ab 5af79c 5af790
-    5af7ac 5af7a0 5af794
-    // char는 크기가 1이므로 주고값 1 증가, 포인터 변수는 크기가 4이므로 주소값 4 증가
-    
-    A 12ffbe7 12ffbd8
-    B 12ffbe8 12ffbdc
-    // A의 다음 주소 값인 B가 출력, 포인터 변수의 주소도 1 증가
-    ```
+      // 주소의 가산
+  	printf("%x %x %x \n", &c, &cp, &cpp);
+  	printf("%x %x %x \n", &c + 1, &cp + 1, &cpp + 1);
   
-  - ex)
-    <img src="..\img\pointer10.png" alt="img"/>
+      // 값의 가산
+  	printf("%c %x %x \n", c, cp, cpp);
+  	printf("%c %x %x \n", c + 1, cp + 1, cpp + 1);
+  }
+  ```
+
+  ```
+  5af7ab 5af79c 5af790
+  5af7ac 5af7a0 5af794
+  // char는 크기가 1이므로 주고값 1 증가, 포인터 변수는 크기가 4이므로 주소값 4 증가
   
-    ```c
-    #include <stdio.h>
-    
-    int main() {
-    	int array[3] = { 10,20,30 };
-    	int* ip = NULL;
-    	int** ipp = NULL;
-    
-    	ip = array;
-    	ipp = &ip;
-    
-    	printf("%d %d %d \n", array[0], array[1], array[2]);
-    	printf("%d %d %d \n", *(ip + 0), *(ip + 1), *(ip + 2));
-    	printf("%d %d %d \n", *(*ipp + 0), *(*ipp + 1), *(*ipp + 2));
-    }
-    ```
+  A 12ffbe7 12ffbd8
+  B 12ffbe8 12ffbdc
+  // A의 다음 주소 값인 B가 출력, 포인터 변수의 주소도 1 증가
+  ```
+
+- ex)
+  <img src="..\img\pointer10.png" alt="img"/>
+
+  ```c
+  #include <stdio.h>
   
-    ```
-    10 20 30
-    10 20 30
-    10 20 30
-    ```
+  int main() {
+  	int array[3] = { 10,20,30 };
+  	int* ip = NULL;
+  	int** ipp = NULL;
+  
+  	ip = array;
+  	ipp = &ip;
+  
+  	printf("%d %d %d \n", array[0], array[1], array[2]);
+  	printf("%d %d %d \n", *(ip + 0), *(ip + 1), *(ip + 2));
+  	printf("%d %d %d \n", *(*ipp + 0), *(*ipp + 1), *(*ipp + 2));
+  }
+  ```
+
+  ```
+  10 20 30
+  10 20 30
+  10 20 30
+  ```
 
 ### 함수 포인터
 
@@ -238,24 +239,24 @@
 
 ## 포인터와 배열
 
-- 포인터와 1차원 배열
+### 포인터와 1차원 배열
 
-  ```c
-    #include <stdio.h>
-    
-  int main()
-    {
-    	int array[3] = { 10, 20, 30 };
-    	printf("%d %d %d \n", sizeof(array), sizeof(array + 0), sizeof(&array[0]));
-    }
-  ```
-
-  ```
-    12 4 4
-    // 포인터 변수의 크기는 4
-  ```
+```c
+  #include <stdio.h>
   
-   <img src="..\img\pointer13.png" alt="img"/>
+int main()
+  {
+  	int array[3] = { 10, 20, 30 };
+  	printf("%d %d %d \n", sizeof(array), sizeof(array + 0), sizeof(&array[0]));
+  }
+```
+
+```
+  12 4 4
+  // 포인터 변수의 크기는 4
+```
+
+ <img src="..\img\pointer13.png" alt="img"/>
 
 - 포인터 변수를 통한 1차원 배열 요소의 주소 접근
 
@@ -415,3 +416,115 @@
   10 20 30
   ```
 
+### 포인터와 2차원 배열
+
+- 2차원 배열에서 array[i] == *(array+i) 는 주소
+  <img src="..\img\pointer17.png" alt="img"  />
+  - 1차원 배열: *(array+i) == array[i] == *&array[i] 는 값 
+  - 2차원 배열: *(array+i) == array[i] == *&array[i] 는 주소 
+
+- 포인터 변수를 통한 2차원 배열의 접근
+
+  - 2차원 배열의 시작 주소를 저장
+
+  - 1차원 포인터 변수는 2차원 배열을 1차원으로만 접근 가능
+
+    ```c
+    #include <stdio.h>
+    int main()
+    {
+    	int array[2][3] = { 10,20,30,40,50,60 };
+    	int* p = NULL;     //1차원 포인터 이므로 배열 접근 시 1차원 적으로 접근
+    
+    	p = array;	   // 포인터 변수에 배열의 시작 주소를 저장
+        // p=&array[0][0]; 
+        // p=array[0];
+        // p=*(array+0)
+    
+    	printf("%x %x %x \n", &p[0], &p[1], &p[2]);	    
+        //= printf("%x %x %x \n", p+0, p+1, p+2);
+    	printf("%x %x %x \n", &p[3], &p[4], &p[5]);	    
+        //= printf("%x %x %x \n", p+3, p+4, p+5);
+    
+    	printf("%d %d %d \n", p[0], p[1], p[2]);	
+        //= printf("%d %d %d \n", *(p+0), *(p+1), *(p+2));
+    	printf("%d %d %d \n", p[3], p[4], p[5]);	
+        //= printf("%d %d %d \n", *(p+3), *(p+4), *(p+5));
+    }
+    
+    ```
+
+    ```
+    7ffe80 7ffe84 7ffe88
+    7ffe8c 7ffe90 7ffe94
+    10 20 30
+    40 50 60
+    ```
+
+- 배열 포인터
+
+  - 열을 지정할 수 있는 포인터 (배열을 가리키는 포인터)
+    <img src="..\img\pointer18.png" alt="img"  />
+
+  - 배열 포인터 변수를 통한 2차원 배열의 접근 (열을 지정)
+
+    ```c
+    #include <stdio.h>
+    int main()
+    {
+    	int array[2][3] = { 10,20,30,40,50,60 };
+    	int(*p)[3] = NULL;		// 배열 포인터 변수 p 선언
+    
+    	p = array;		// 포인터 변수에 배열의 시작 주소를 저장
+        // p=&array[0][0]; // p=array[0]; 
+    
+    	printf("%d %d %d \n", p[0][0], p[0][1], p[0][2]);
+    	printf("%d %d %d \n", p[1][0], p[1][1], p[1][2]);
+    
+    }
+    ```
+
+    ```
+    10 20 30
+    40 50 60
+    ```
+
+## 포인터 배열
+
+- 포인터 배열
+
+  - 주소를 저장하는 배열
+    <img src="..\img\pointer19.png" alt="img" style="zoom:120%;" />
+
+  - 포인터 배열의 선언
+
+    ```c
+    #include <stdio.h>
+    int main()
+    {
+    	int a = 1, b = 2, c = 3;
+    	int* pointer[3] = { NULL, NULL, NULL };
+    
+    	pointer[0] = &a;
+    	pointer[1] = &b;
+    	pointer[2] = &c;
+    	return 0;
+    }
+    ```
+
+  - 포인터 배열의 필요성
+
+    - 포인터 변수가 많아지는 단점을 보완
+    - ‘포인터 배열’의 요소로 주소를 체계적으로 관리
+
+  - 포인터 배열과 배열 포인터의 차이
+
+    - 배열 포인터 변수
+
+      -n열을 가진 2차원 배열의 시작 주소를 저장
+       int (*p)[n] = NULL;
+
+    - 포인터 배열 변수
+
+      -여러 주소를 저장할 수 있는 배열
+       int* p[3] = {NULL, NULL, NULL};
