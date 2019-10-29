@@ -1,4 +1,4 @@
-##  Table of Contents
+#  Table of Contents
 
 -  [Linear algebra](#Linear-algebra)
 
@@ -81,7 +81,8 @@
 
 - 정의
   
- <img src="..\img\vector4.png" alt="png" />
+
+   <img src="..\img\vector4.png" alt="png" />
   
 - 2 X (1, 2, 3) = (2, 4, 6)
 
