@@ -192,7 +192,8 @@
   <img src="..\img\vector22.png" alt="png" />
 
 - 덧셈이 가능한 행렬에 적용되는 실수배 성질
-  <img src="..\img\vector23.png" alt="png" />
+  
+   <img src="..\img\vector23.png" alt="png" />
 
 ### 행렬의 곱
 
