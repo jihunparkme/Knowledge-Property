@@ -1,4 +1,4 @@
-#  **Data structure** 
+#  Data structure 
 
 <br>
 
@@ -315,3 +315,129 @@
 <br>
 
 ## 비선형 자료구조
+
+- 선형 자료구조가 아닌 모든 자료구조
+
+### 그래프
+
+- 객체들 사이의 관계를 정점(vertex)과 간선(edge)로 나타낸 그림
+
+### 깊이 우선 탐색(DFS)
+
+- Depth First Search
+
+- 방문한 정점으로부터 깊게 들어가며 탐색한 후, 되돌아 나오다가 탐색하지 않은 노드를 탐색하는 방식 
+
+- 깊이가 너무 Depth가 너무 큰 경우, 런타임 에러 발생 우려
+
+- 실행 과정
+
+  1.  정점을 방문
+  2. 인접한 정점 중 아직 방문하지 않은 정점을 방문(한 길로 쭉 파고 들어간다)
+  3. 더 이상 들어갈 길이 없을 때(인접한 모든 정점이 이미 방문한 정점일 때), 방문하지 않은 인접한 정점을 찾을 때까지 들어간 길을 돌아나옴
+  4. 위 과정을 반복
+
+   <img src="..\img\dfs.png" alt="img" style="zoom: 50%;" />
+  
+  ```python
+  def dfs(v):		# 정점 v부터 탐색
+      global rst
+      if v == 'A':
+          visited[v] = True
+          rst += v + ' -> '
+      for i in Graph[v]:
+          if not visited[i]:
+              visited[i] = True
+              rst += i + ' -> '
+              dfs(i)
+  
+  if __name__ == "__main__":
+      Graph = {
+          'A': ['B'],
+          'B': ['A', 'C', 'H'],
+          'C': ['B', 'D', 'G'],
+          'D': ['C', 'E'],
+          'E': ['D', 'F'],
+          'F': ['E'],
+          'G': ['D'],
+          'H': ['B', 'I', 'J', 'M'],
+          'I': ['H'],
+          'J': ['H', 'K'],
+          'K': ['J', 'L'],
+          'L': ['K'],
+          'M': ['H']
+      }
+      visited = dict(zip([v for v in Graph], [False for _ in Graph])) # 방문 여부 체크
+      rst = ''
+  
+      dfs('A')
+      print(visited)
+      print(rst)
+  ```
+  ```
+  {'A': True, 'B': True, 'C': True, 'D': True, 'E': True, 'F': True, 'G': True, 'H': True, 'I': True, 'J': True, 'K': True, 'L': True, 'M': True}
+  
+  A -> B -> C -> D -> E -> F -> G -> H -> I -> J -> K -> L -> M
+  ```
+
+###  너비 우선 탐색(BFS)
+
+-  Breadth First Search 
+
+-  넓게 퍼져가며 정점을 방문 
+
+- 실행 과정
+
+  1. 첫 정점을 방문
+  2. 아직 방문하지 않은 인접한 정점들을 큐에 넣음
+  3. 큐에 있는 정점들을 순서대로 방문
+  4. 큐에 있는 정점에 대해 인접하면서 아직 방문하지 않은 정점들로 새로운 큐를 구성
+  5. 위 과정을 반복
+
+   <img src="..\img\dfs.png" alt="img" style="zoom: 50%;" />
+
+  ```python
+  def bfs(v):
+      global rst
+      visited[v] = True
+      queue = [v]
+      while queue:
+          now = queue.pop(0)
+          rst += now + ' -> '
+          for i in Graph[now]:
+              if not visited[i]:
+                  visited[i] = True
+                  queue.append(i)
+  
+  if __name__ == "__main__":
+      Graph = {
+          'A': ['B'],
+          'B': ['A', 'C', 'H'],
+          'C': ['B', 'D', 'G'],
+          'D': ['C', 'E'],
+          'E': ['D', 'F'],
+          'F': ['E'],
+          'G': ['D'],
+          'H': ['B', 'I', 'J', 'M'],
+          'I': ['H'],
+          'J': ['H', 'K'],
+          'K': ['J', 'L'],
+          'L': ['K'],
+          'M': ['H']
+      }
+      visited = dict(zip([v for v in Graph], [False for _ in Graph]))
+      rst = ''
+  
+      bfs('A')
+      print(visited)
+      print(rst)
+  ```
+
+  ```
+  {'A': True, 'B': True, 'C': True, 'D': True, 'E': True, 'F': True, 'G': True, 'H': True, 'I': True, 'J': True, 'K': True, 'L': True, 'M': True}
+  
+  A -> B -> C -> H -> D -> G -> I -> J -> M -> E -> K -> F -> L
+  ```
+
+### 트리
+
