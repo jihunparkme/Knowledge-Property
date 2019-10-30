@@ -516,8 +516,7 @@
 - 함수(변환)을 행렬로 표현할 수 있음
   
   - 함수의 합성과 행렬의 곱의 비교
-
-     <img src="..\img\vector89.png" alt="png"  />
+    <img src="..\img\vector89.png" alt="png"  />
 
 ### 행렬과 일차변환
 
