@@ -131,11 +131,11 @@
 - 벡터와 복소수의 관계
   
 
-     <img src="..\img\vector14.png" alt="png" />
+      <img src="..\img\vector14.png" alt="png" />
 
 <br>
 
-​		<img src="..\img\vector15.png" alt="png" />
+ <img src="..\img\vector15.png" alt="png" />
 
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
 
@@ -516,11 +516,31 @@
 - 함수(변환)을 행렬로 표현할 수 있음
   
   - 함수의 합성과 행렬의 곱의 비교
-    <img src="..\img\vector89.png" alt="png"  />
+    
+     <img src="..\img\vector89.png" alt="png"  />
 
 ### 행렬과 일차변환
 
 - linear transformation
+- 직선에 대한 대칭이동, 회전이동 등은 행렬의 곱으로 표현할 수 있기 때문에 일차변환
+
+- 변환
+
+  - 능동 변환 : 원점(좌표축)은 그대로 두고 좌표평면위의 점을 직접 이동시키는 것
+
+  - 수동 변환 : 좌표평면위의 점은 그대로 둔 채 원점을 이동시키는 것
+
+  - <img src="..\img\vector90.png" alt="png"  />
+
+  - 그 밖에도 여러 가지 대칭 이동을 행렬로 표현할 수 있음
+
+    x축 대칭이동									y축 대칭이동										직선 y=x에 대한 대칭이동
+
+     <img src="..\img\vector91.png" alt="png"  />
+
+### 행렬과 복소수
+
+
 
 
 
