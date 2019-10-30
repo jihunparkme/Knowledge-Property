@@ -29,6 +29,10 @@
   - 도함수의 도함수
   - 이계도함수의 도함수는 삼계도함수 f<sup>(3)</sup>(x)
   - 함수 y = f(x) 를 n번 미분한 함수를 n계도함수 f<sup>(n)</sup>(x)
+  
+- ex
+
+    <img src="..\img\picture33.png" alt="img" style="zoom: 90%;" />
 
 ### 함수의 그래프와 미분의 수학적 의미
 
@@ -70,6 +74,7 @@
 ### <img src="..\img\picture15.png" alt="img" style="zoom:100%;" /> (무한대/무한대)꼴의 수열의 극한
 
 - <img src="..\img\picture16.png" alt="img" style="zoom:100%;" />
+
   - ex)
 
      <img src="..\img\picture17.png" alt="img" style="zoom:100%;" />
@@ -158,3 +163,28 @@
 
      <img src="..\img\picture30.png" alt="img" style="zoom:100%;" />
 
+  - f(x) 와 g(x) 가 미분 가능할 때 각각의 도함수
+
+     <img src="..\img\picture31.png" alt="img" style="zoom:100%;" />
+
+  - 합성함수의 미분법 = 연쇄 공식(chain rule)
+
+     <img src="..\img\picture32.png" alt="img" style="zoom:100%;" />
+
+### 접선의 기울기와 도함수
+
+- 비슷한 극한값을 여러번 계산해야하는 번거로움을 해결해주는 함수
+
+### 미분과 근사
+
+p15
+
+<br>
+
+<Br>
+
+>Reference
+>
+>밝히리
+>
+>http://blog.daum.net/eigenvalue/10856412 
