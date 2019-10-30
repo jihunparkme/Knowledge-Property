@@ -387,7 +387,7 @@ int main()
 
 - 포인터변수의 이동을 통한 1차원 배열 값 입력
 
-   <img src="..\img\pointer16.png" alt="img"/>
+     <img src="..\img\pointer16.png" alt="img"/>
 
   ```c
   #include <stdio.h>

@@ -20,7 +20,7 @@
 
 - [역행렬](#역행렬)
   
-    <img src="..\img\Matrix6.png" alt="png" />
+     <img src="..\img\Matrix6.png" alt="png" />
 - [행렬식](#행렬식(Determinant))
   
   마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
