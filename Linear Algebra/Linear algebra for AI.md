@@ -307,6 +307,8 @@
 
 - [Linear Combinations 의 Span 부분 참고](#Linear-Combinations)
 
+
+
 ## Basis and Dimension
 
 ### Span and Subspace
@@ -332,6 +334,7 @@
 - 결국, Subspace는 항상 Span으로 표현될 수 있음
 
 - column space
+  
   -  column 벡터들로 이루어진 span
 
 ### Basis of a Subspace
@@ -344,6 +347,7 @@
     e.g. 3개의 벡터가 한 평면에 모두 있는 경우, span이 중복될 수 있음
 
 - 기저 벡터는 unique 하지 않음
+  
   - 서로 다른 기저 벡터를 사용했을 때, 특정 점을 표현할 수 있는 다른 solution이 존재
 
 ### Dimension of Subspace
@@ -355,7 +359,7 @@
 
 - column space의 dimension
 
-   <img src="..\img\picture87.png" alt="png" style="zoom:80%;" />
+    <img src="..\img\picture87.png" alt="png" style="zoom:80%;" />
 
   - column들이 span하는 subspace의 기저 벡터 개수
 
@@ -365,21 +369,217 @@
 
 
 
+## Linear Transformation
+
+- 선형 변환
+
+- 용어 정리
+
+  - 변환 = transformation = function = mapping
+
+  - an input x to an output y
+
+     <img src="..\img\picture88.png" alt="png" style="zoom:80%;" />
+
+  - Domain (정의역)
+
+    - 함수의 x(입력 변수)로서 가능한 모든 input 집합 
+
+  - Co-domain (공역) 
+
+    - 함수의 y(출력 값)로서 가능한 모든 output 집합
+
+  - Image (함수의 상)
+
+    - input x 가 주어졌을 때, output y
+
+  - Range(치역)
+
+    - 각 x(입력 변수)에 mapped 된 모든 output 값
+
+     <img src="..\img\picture90.png" alt="png" style="zoom:80%;" />
+
+  - 함수는 단 하나의 output 값이 존재
+
+- 선형 변환
+
+  - 변환 T가 <img src="..\img\picture91.png" alt="png" style="zoom:80%;" /> 일 경우 선형을 만족
+
+    - 두 벡터를 선형결합하여 함수에 넣었을 때 나오는 결과와 
+
+      두 벡터를 먼저 각각 함수에 넣은 후, 나온 결과를 선형결합에 적용했을 때의 결과가 항상 똑같을 경우
+
+      선형 변환이라고 부를 수 있음 
+
+  - e.g. <img src="..\img\picture92.png" alt="png" style="zoom: 67%;" />
+
+    <img src="..\img\picture89.png" alt="png" style="zoom:90%;" />
+
+  -  <img src="..\img\picture93.png" alt="png" style="zoom:80%;" />  이 선형 변환이라면 <img src="..\img\picture94.png" alt="png" style="zoom:80%;" /> 를 만족
+
+    - 여기서 A 는 선형 변환 T의 standard matrix 라고 부름
+
+       <img src="..\img\picture95.png" alt="png" style="zoom:100%;" />
+
+    - e.g.
+
+      <img src="..\img\picture96.png" alt="png" style="zoom:100%;" />
+
+## ONTO and ONE-TO-ONE
+
+- ONTO (전사함수, 전체를 다 사용한 함수)
+
+  - 공역 = 치역 (공역에서 나올 수 있는 모든 값이 치역일 경우)
+
+  - ONTO가 되려면 적어도 정의역의 값이 공역보다 많아야 함 IR<sup>3</sup> -> IR<sup>2</sup>
+
+     IR<sup>2</sup> -> IR<sup>3</sup> 는 ONTO 가 될 수 없음
+
+  - 전사, ONTO 한다고 표현하려면, 모든 공역이 정의역으로부터 mapped 가 되어야 함
+
+     <img src="..\img\picture97.png" alt="png" style="zoom: 67%;" />
+
+- ONE-TO-ONE (일대일함수)
+
+  - 치역을 mapping 한 정의역이 하나만 존재할 경우
+
+  - IR<sup>3</sup> -> IR<sup>2</sup> 은 ONE-TO-ONE 이 될 수 없음
+
+  - Ax = b 에서 x 가 linear independence (선형 독립) 할 때와 동치
+
+     <img src="..\img\picture98.png" alt="png" style="zoom: 67%;" />
+
+<Br>
+
+# **Least Square**
+
+##  Introducing Least Squares Problem
+
+### Over-determined Linear Systems
+
+- 방정식(equations)의 개수가 미지수(variables)의 개수보다 더 많을 때
+
+  - i.e. 데이터의 개수가 설명변수의 개수보다 더 많을 때
+
+  - 보통 solution이 존재하지 않음
+
+    세 개의 벡터(x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>) 만으로 Span할 수 있는 공간은 고정적인데, 주어진 큰 dim의 벡터 b 가 그 Span 안에 포함될 확률이 희박하기 때문
+
+     <img src="..\img\picture99.png" alt="png" style="zoom: 80%;" />
+
+### Least Squares
+
+-  Over-determined 상황에서 해가 없다는 결과로 끝내는게 아닌 근사적으로라도 해를 구해보자라고 하는 idea
+
+- 이 개념을 접근하기 전에 아래 개념들([Inner Product](#Inner-Product), [Vector Norm](#Vector-Norm), [Unit Vector](#Unit-Vector)을 먼저 익히면 좋음
+
+- 우선 공식은,  <img src="..\img\picture111.png" alt="png" style="zoom: 80%;" /> 로 정의할 수 있음
+
+  이는,  **b**-A**x** (Norm)를 최소화하여 에러를 (x를 조절해가면서) 줄여주고자(min) 하는데, 
+
+  최소화된 에러를 만족시킨 최적의 벡터 x 가 무엇인지를 구하고자 하는 것 
+
+  <img src="..\img\picture110.png" alt="png" style="zoom: 80%;" />
+
+- 기존 solution 을 Over-determined 에 적용하였을 때, 
+
+  <img src="..\img\picture112.png" alt="png" style="zoom: 80%;" />
+
+  
+
+### Inner Product
+
+- 내적 (=dot product)
+
+  - dot 은 내적이라는 의미를 나타냄
+
+- scala 를 output 으로 갖는 matrix
+
+   <img src="..\img\picture100.png" alt="png" style="zoom: 80%;" />
+
+- Inner product 의 성질
+
+   <img src="..\img\picture101.png" alt="png" style="zoom: 80%;" />
+
+### Vector Norm
+
+- 벡터의 길이(length or norm) 은 0 이상의 scalar 이고, 아래와 같이 사용
+
+  Vector Norm 은 자기 자신(v)과의 내적에 square root 를 한 것과 같음  
+
+   <img src="..\img\picture102.png" alt="png" style="zoom: 80%;" />
+
+- scala 가 곱해질 경우 절대값을 사용
+
+   <img src="..\img\picture103.png" alt="png" style="zoom: 80%;" />
+
+### Unit Vector
+
+- 단위 벡터
+
+  - 길이가 1인 벡터를 단위 벡터라고 부름
+
+  - 길이가 1인 벡터를 만드는 과정을 Normalizing vector
+
+    original 벡터에 상수배를 곱해주면 1이 나올 수 있음
+
+     <img src="..\img\picture104.png" alt="png" style="zoom: 80%;" /> ,   	<img src="..\img\picture105.png" alt="png" style="zoom: 90%;" />
+
+### Distance between Vector
+
+- 벡터의 거리
+
+   <img src="..\img\picture106.png" alt="png" style="zoom: 80%;" />
+
+### Inner product and Angle Between Vector
+
+- 벡터의 각도를 내적으로 구하는 방법
+
+  1. 두 벡터의 내적 구하기
+  2. 각 벡터의 길이 구하기
+  3. 공식에 대입하기
+
+- 적용
+
+   <img src="..\img\picture107.png" alt="png" style="zoom: 67%;" />
+
+  
+
+  <img src="..\img\picture108.png" alt="png" style="zoom: 80%;" />
+
+### Orthogonal Vector
+
+- 수직 벡터
+
+  - 두 벡터가 수직일 경우, 다음을 만족 (cos 세타가 0 이므로)
+
+     <img src="..\img\picture109.png" alt="png" style="zoom: 80%;" />
 
 
 
 
 
 
-#  **Least Square**
+
+
+
+​	
+
+<br>
 
 # eigenvalue decomposition
 
 - 고유값 분해
 
+  
+
+<br>
+
 # specific value decomposition
 
 - 특이값 분해
+
+<br>
 
 
 
@@ -389,8 +589,12 @@
 
 > Reference
 >
+>  [lecture](# https://www.edwith.org/linearalgebra4ai/joinLectures/14072)
+>
 > <br>
 >
 > Numpy tutorial :  [Python Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/)
 >
 > Linear algebra :  [Linear algebra cheat sheet for deep learning](https://towardsdatascience.com/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
+>
+> Nerual Networks : [Linear Transformation with Neural Networks](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)
