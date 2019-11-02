@@ -555,7 +555,11 @@
 
      <img src="..\img\picture109.png" alt="png" style="zoom: 80%;" />
 
+## Least Squares와 그 기하학적 의미
 
+## 정규방정식
+
+ 
 
 
 
