@@ -1,4 +1,4 @@
-# Probability and Statistics
+#  Probability and Statistics
 
 **확률과 통계**
 
@@ -267,7 +267,7 @@
   기호로 <img src="..\img\picture145.png" alt="png" style="zoom: 67%;" />
   - 이 때, 평균, 분산, 표준편차
 
-     <img src="..\img\picture146.png" alt="png" style="zoom:75%;" />
+      <img src="..\img\picture146.png" alt="png" style="zoom:75%;" />
 
 - 큰 수의 법칙
 
@@ -294,5 +294,169 @@
 
      <img src="..\img\picture150.png" alt="png" style="zoom:80%;" />
 
-  - 
 
+- 연속확률변수의 평균, 분산, 표준편차
+
+  - 구간 [\alpha, \beta] 에서 정의된 연속확률변수 X의 확률밀도함수가 f(x) 일 때, 
+
+     <img src="..\img\picture151.png" alt="png" style="zoom:70%;" />
+
+  - 평균, 분산, 표준편차의 성질
+
+     <img src="..\img\picture152.png" alt="png" style="zoom:70%;" />
+
+- 정규분포 ( normal distribution )
+
+  - 연속확률변수 X의 확률밀도함수 f(x)가  <img src="..\img\picture155.png" alt="png" style="zoom:80%;" /> 
+
+  - 정규분포곡선
+
+    : 위 f(x)의 그래프 <img src="..\img\picture156.png" alt="png" style="zoom:70%;" />
+
+     <img src="..\img\picture157.png" alt="png" style="zoom:90%;" />
+
+    ​                     <img src="..\img\picture158.png" alt="png" style="zoom:80%;" />
+
+  - 오일러 상수
+
+    : 정규분포를 정의하기 위함
+
+     <img src="..\img\picture153.png" alt="png" style="zoom:80%;" />        <img src="..\img\picture154.png" alt="png" style="zoom:80%;" />
+
+  - 정규분포곡선의 성질
+
+     <img src="..\img\picture159.png" alt="png" style="zoom:70%;" />
+
+     <img src="..\img\picture160.png" alt="png" style="zoom:70%;" />
+
+     <img src="..\img\picture161.png" alt="png" style="zoom:80%;" />
+
+    - 정규분포의 정의가 상당히 복잡하여 확률을 구하기 어렵기 때문에,
+
+      정규분포를 평균이 0이고 표준편차가 1인 표준정귭군포로 변환하여 사용
+
+  - 표준정규분포
+
+    - 평균이 0이고, 표준편차가 1인 정규분포 N(1, 0)
+
+  - 확률변수 Z가 표준정규분포를 따를 때, Z의 확률밀도함수는 <img src="..\img\picture162.png" alt="png" style="zoom:70%;" />
+
+  - 정규분포의 표준화
+
+    : 일반적인 정규분포를 표준정규분포로 바꾸는 방법
+
+     <img src="..\img\picture163.png" alt="png" style="zoom:70%;" />
+
+  - 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 확률변수 <img src="..\img\picture164.png" alt="png" style="zoom:70%;" /> 는 표준정규분포 N(0, 1)을 따름
+
+    - 이항분포와 정규분포의 관계
+
+      : 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 X는 근사적으로 정규분포 <img src="..\img\picture166.png" alt="png" style="zoom:70%;" />를 따름
+
+      - n이 충분히 크다는 것은 일반적으로 np >= 5, nq >=5 일 때를 뜻함
+
+## 모평균의 추정
+
+ **estimation of population mean** 
+
+- **전수조사** : 조사 대상 전체를 조사
+
+- **표본 조사** : 일부분만 택하여 조사
+
+  - **모집단** : 표본조사에서 조사 대상 전체
+
+    **추출**
+
+    - **임의 추출** : 모집단에 속하는 각 대상을 같은 확률로 추출
+    - **복원 추출** : 한 개의 자료를 추출한 후 추출한 것을 되돌려 놓고 다시 추출하는 것
+    - **비복원 추출** : 되돌려 놓지 않고 계속하여 추출하거나 동시에 여러 개를 추출하는 것
+
+    **모집단의**
+
+    - **모평균 (m)** : 모집단에서 조사하고자 하는 특성을 나타내는 확률변수 X의 평균
+    - **모분산 (σ<sup>2</sup>)** : 모집단에서 조사하고자 하는 특성을 나타내는 확률변수 X의 분산
+    - **모표준편차 (σ)** : 모집단에서 조사하고자 하는 특성을 나타내는 확률변수 X의 표준편차
+
+  - **표본** : 조사하기 위하여 뽑은 모집단의 일부분
+
+    - **표본의 크기** : 표본에 포함된 대상의 개수
+
+    **표본의**
+
+    - **표본평균** (<img src="..\img\picture168.png" alt="png" style="zoom:60%;" />) : 모집단에서 임의추출한 크기가 n인 표본 X<sub>n</sub>의 평균
+
+       <img src="..\img\picture169.png" alt="png" style="zoom:70%;" />
+
+      - 표본평균 <img src="..\img\picture168.png" alt="png" style="zoom:60%;" /> 의 평균 : <img src="..\img\picture171.png" alt="png" style="zoom:70%;" />
+      - 표본평균 <img src="..\img\picture168.png" alt="png" style="zoom:60%;" />  의 분산 : <img src="..\img\picture172.png" alt="png" style="zoom:70%;" />  (n: 표본의 크기)
+      - 표본평균 <img src="..\img\picture168.png" alt="png" style="zoom:60%;" /> 의 표준편차 : <img src="..\img\picture173.png" alt="png" style="zoom:70%;" />
+
+    - **표본분산 (S<sup>2</sup>)** : 모집단에서 임의추출한 크기가 n인 표본 X<sub>n</sub>의 분산
+
+       <img src="..\img\picture170.png" alt="png" style="zoom:70%;" />
+
+    - **표본표준편차 (S)** : 모집단에서 임의추출한 크기가 n인 표본 X<sub>n</sub>의 표준편차
+
+- 표본평균의 분포
+
+  - 모평균이 m, 모분산이 σ<sup>2</sup>인 모집단에서 크기가 n인 표본을 임의추출할 때, 다음이 성립
+
+     <img src="..\img\picture174.png" alt="png" style="zoom:70%;" />
+
+- **추정** : 모집단의 성질을 알려고 할 때, 전수조사가 어려운 경우 모집단의 일부인 표본을 조사하여 얻은 정보를 통해 모집단의 성질을 추측 가능. 이 때, 표본에서 얻은 자료를 근거로 모집단의 특성을 나타내는 값을 추측하는 것
+
+  - 표본평균을 이용한 모평균 추정
+
+     <img src="..\img\picture175.png" alt="png" style="zoom:70%;" />
+
+    - 신뢰도 95%의 신뢰구간이란 크기가 n인 표본을 여러 번 추출하여 신뢰구간을 만들 때, 
+
+      모평균 m을 포함하는 구간이 약 95%라는 뜻
+
+    - 표본의 크기 n이 충분히 크면 모표준편차(σ)와 표본표준편차(S)가 거의 같아지므로 σ대신 S를 사용
+
+    - 표본의 크기가 일정할 때 신뢰도가 높아지면 신뢰구간의 길이는 길어짐
+
+      한편, 신뢰도가 일정할 때 표본의 크기가 커지면 신뢰구간의 길이는 짧아짐
+
+       <img src="..\img\picture176.png" alt="png" style="zoom:70%;" />
+
+## 모비율의 추정
+
+- **모비율** (<img src="..\img\picture178.png" alt="png" style="zoom:70%;" />) : 모집단에서의 <u>어떤 사건에 대한 비율</u>을 고려할 때, 그 비율을 그 사건에 대한 모비율이라고 함
+
+  - 일반적으로 모비율 p의 값을 추정하기 위해서는 모집단에서 임의 추출한 표본을 이용할 수 있음
+
+  - 확률변수 X는 어떤 사건이 일어날 확률이 p인 시행을 n번 하였을 때, 그 사건이 일어난 횟수이므로 이항분포 B(n, p)를 따름
+
+    - 따라서 확률변수 X의 평균과 분산은 <img src="..\img\picture181.png" alt="png" style="zoom:70%;" />
+
+  - 모비율의 신뢰구간
+
+     <img src="..\img\picture184.png" alt="png" style="zoom:70%;" />
+
+- **표본비율** (<img src="..\img\picture177.png" alt="png" style="zoom:70%;" />) : 모집단에서 <u>임의추출한 표본에서의 비율</u>을 그 사건에 대한 표본비율이라고 함
+
+   <img src="..\img\picture180.png" alt="png" style="zoom:70%;" />
+
+  - 표본비율 <img src="..\img\picture177.png" alt="png" style="zoom:70%;" />의 평균과 분산 및 표준편차
+
+     <img src="..\img\picture182.png" alt="png" style="zoom:80%;" />
+
+  - 표본비율 <img src="..\img\picture177.png" alt="png" style="zoom:70%;" />의 분포
+
+     <img src="..\img\picture183.png" alt="png" style="zoom:70%;" />
+
+    - n이 충분히 크다는 것은 일반적으로 np >= 5, nq >=5 일 때를 뜻함
+
+
+
+<br>
+
+<Br>
+
+> Reference
+>
+> Sooji Shin
+>
+>  http://soojishin.com/ 
