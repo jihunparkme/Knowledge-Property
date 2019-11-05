@@ -14,23 +14,64 @@
   - [행렬식](#행렬식(Determinant))
   - [회전변환행렬 유도](#회전변환행렬-유도)
 
+- [행렬의 응용](#행렬의-응용)
+
+  - [고유값과 고유벡터](#고유값과-고유벡터)
+  - [케일리-해밀턴 정리](#케일리-해밀턴-정리)
+
   <br>
 
 ##  **summary** 
 
-- [역행렬](#역행렬)
+- :star:[고유값(eigenvalue)과 고유벡터(eigenvector)](#고유값과-고유벡터)
   
-     <img src="..\img\Matrix6.png" alt="png" />
-- [행렬식](#행렬식(Determinant))
+     - 고유값(eigenvalue)
+     
+       <img src="..\img\vector74.png" alt="png"  />
+     
+     - 고유벡터(eigenvector)
+     
+       <img src="..\img\vector75.png" alt="png" style="zoom:90%;" />
+     
+- [고유값 분해](#고유값-분해)
   
-  마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
-- [고유값과 고유벡터](#고유값과-고유벡터)
-  - 고유값(eigenvalue)
-    
-    <img src="..\img\vector74.png" alt="png"  />
-  - 고유벡터(eigenvector)
-    
-     <img src="..\img\vector75.png" alt="png" style="zoom:90%;" />
+- [대각합(Trace)](#대각합(Trace))
+  
+- [대각행렬](#닮음변환(=유사변환))
+  
+- [특이값분해(SVD, singular value decomposition)](#특이값-분해)
+  
+- [의사역행렬(pseudo-inverse)](#의사역행렬)
+  
+- [케일리-해밀턴 정리](#케일리-해밀턴 정리)
+  
+- :star:[행렬식(determinant)](#행렬식(Determinant))
+  
+     행렬식은 어떤 행렬의 역행렬 존재여부에 대한 판별값 역할
+     
+     - 행렬식 표현
+     
+      <img src="..\img\vector46.png" alt="png" />
+     
+      <img src="..\img\picture185.png" alt="png" style="zoom:80%;" />
+     
+     - 행렬식의 주요 성질
+     
+      <img src="..\img\picture186.png" alt="png" style="zoom:80%;" /> 
+     
+- 최소승자법(least-square)
+  
+- 선형연립방적식 풀이
+  
+- 주성분분석(principal component analysis)
+  
+- 2차곡선의 행렬표현
+  
+- :star:[역행렬](#역행렬)
+  
+     행렬 A의 역행렬은 A와 곱해서 항등행렬 E가 나오는 행렬을 A의 역행렬이라고 정의
+     
+      <img src="..\img\Matrix6.png" alt="png" />
 
 <Br>
 
@@ -262,6 +303,19 @@
 
 ### 역행렬
 
+- 행렬 A의 역행렬은 A와 곱해서 항등행렬 E가 나오는 행렬을 A의 역행렬이라고 정의
+  
+
+`AB=BA=E`
+
+  위의 식과 같이 A와 곱해서 E가 나오게 하는 행렬 B를 A의 역행렬이라고 하고 A<sup>-1</sup> 이라고 표기 
+
+  - 선형방적식을 풀 때 유용
+  
+    - 선형연립방적식을 행렬로 표현한 AX = B 을 X = A<sup>-1</sup>B 로, 역행렬을 활용하여 해를 구할 수 있음
+    
+    - 만일, A의 역행렬이 존재하지 않을 경우 선형방정식의 해가 결정되지 않는 경우로서 해가 무수히 많거나 존재하지 않는 경우
+  
 - 서로 곱해서 단위행렬이 될 때, 한 행렬을 다른 행렬의 역행렬이라고 함
   = 행렬의 곱셈에 대한 역원
 
@@ -269,10 +323,11 @@
   - a는 실수,  ax=xa=1 을 만족하는 실수 x를 a의 역수라고 칭함
   - a!=0 일 경우, a의 역수 a<sup>-1</sup>가 존재, a<sup>-1</sup>=1/a
 
-- 정사각행렬 A에 대하여 AX = XA = E를 만족하는 행렬 X가 존재할 때,
+- 정사각행렬(정방행렬) A에 대하여 AX = XA = E를 만족하는 행렬 X가 존재할 때,
   - 행렬 X는 A의 역행렬 (=A inverse)
   - X = A<sup>-1</sup>
   - 반대로 A는 X의 역행렬이라고도 할 수 있음
+  
 - 공식
   
     <img src="..\img\Matrix6.png" alt="png" />
@@ -317,7 +372,13 @@
 
 ### 행렬식(Determinant)
 
-- 정사각형에서만 정의, 그 결과는 수
+- 정사각형(정방행렬)에서만 정의, 그 결과는 수 (그 행렬의 특성을 결정짓는 중요한 값)
+
+  - 어떤 행렬 A의 행렬식 값 det(A) = 0 이면 행렬 A는 역행렬을 갖지 않고,
+
+    det(A) != 0 라면 A의 역행렬이 존재
+
+  - 행렬식은 어떤 행렬의 역행렬 존재여부에 대한 판별값 역할
 
 - 먼저 치환에 대한 이해가  필요
   - 치환 : 임의의 두 수의 위치는 바꾸는 연산
@@ -334,31 +395,33 @@
     - 이 가운데 12가지는 even permutation, 나머지는 odd permutation
   - 치환 시 화살표와 같은 방향의 순서를 가지면 even, 반대방향의 순서를 가지면 odd
     
-       <img src="..\img\vector42.png" alt="png" />
+        <img src="..\img\vector42.png" alt="png" />
   
 - 행렬식 
 
   - 행렬식 표현 기호
     
 
-       <img src="..\img\vector46.png" alt="png" />
-  
+ <img src="..\img\vector46.png" alt="png" />
+       
   - 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
     
-
-    - 세 수를 선택하는 방법은 3! = 6 가지
+  - 세 수를 선택하는 방법은 3! = 6 가지
     
   
      <img src="..\img\vector44.png" alt="png" />
-    
+        
     - permutation을 이용하여 행렬식 구하기
-
-      -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
-  
+    
+    
+  -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+    
       -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
-      <img src="..\img\vector45.png" alt="png" />
+    <img src="..\img\vector45.png" alt="png" />
   
   - 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
+  
+  - 대각행렬 또는 삼각행렬의 행렬식 값은 대각원소들의 곱
 ### 회전변환행렬 유도
 - 기저 벡터인 (1,0)과 (0,1)를 θ만큼 회전
   
@@ -383,9 +446,9 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.    <img src="..\img\vector57.png" alt="png" />
+  2.     <img src="..\img\vector57.png" alt="png" />
 
-  3.    <img src="..\img\vector58.png" alt="png" />
+  3.     <img src="..\img\vector58.png" alt="png" />
      
      행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
      
@@ -443,13 +506,68 @@
 
 ### 고유값과 고유벡터
 
+- 행렬 A를 선형변환으로 봤을 때, 선형변환 A에 의한 변환 결과가 자기 자신의 상수배가 되는 0이 아닌 벡터를 **고유벡터**라 하고 이 상수배 값을 **고유값** 이라고 함
+
+  - 정방행렬에 대해서만 정의
+
 - 고유값(eigenvalue)
-  - <img src="..\img\vector74.png" alt="png"  />
-
+  
+- <img src="..\img\vector74.png" alt="png"  />
+  
 - 고유벡터(eigenvector)
-  -  <img src="..\img\vector75.png" alt="png" style="zoom:85%;" />
-
+  
+-  <img src="..\img\vector75.png" alt="png" style="zoom:85%;" />
+  
 - 위 식에서 고유값은 3, 고유벡터는 <img src="..\img\vector76.png" alt="png"  />
+
+- 고유값과 고유벡터를 정의하는 식
+
+   <img src="..\img\picture187.png" alt="png" style="zoom:85%;" />
+
+  -  특성방정식 (characteristic equation)  
+
+    : v = (A- λ E)<sup>-1</sup>*0 = 0 으로 고유벡터(v)를 구할 수 있을 것 같지만, 고유벡터는 정의에 의해 영벡터가 아닌 벡터여야 하므로 A- λ E 의 역행렬이 존재하지 않는 경우 존재함 -> `det(A- λ E) = 0`
+
+### **고유값 분해**
+
+**eigen decomposition**
+
+- 행렬 A는 자신의 고유벡터를 열벡터로 하는 행렬과 고유값을 대각원소로 하는 행렬의 곱으로 대각화 분해가 가능
+  - 참고 :  https://darkpgmr.tistory.com/105 
+- 고유값분해 가능 조건
+  - 행렬 A가 n개의 일차독립 고유벡터를 가져야 함
+    - 일차독립( (linearly independent ) : 벡터들의 집합이 있을 때, 이들 벡터 중 어느 한 벡터도 다른 벡터들의 일차결합으로 표현될 수 없는것 
+      - 일차결합 :  어떤 벡터도 다른 벡터들의 상수배 합으로 표현될 수 없는 것
+
+- 대칭행렬(symmetric matrix)과 고유값 분해
+
+  - 대칭행렬 : 정방행렬들 중에서 대각원소를 중심으로 원소값들이 대칭되는 행렬(A<sup>T</sup> = A) 인 행렬
+
+    - 대각행렬(Diagonal matrix) vs 대칭행렬(Symmetric matrix)
+
+       <img src="..\img\picture188.png" alt="png" style="zoom:85%;" />
+
+  - 모든 대칭행렬은 <img src="..\img\picture189.png" alt="png" style="zoom:85%;" /> 처럼 직교행렬을 이용한 고유값 대각화가 가능
+
+  - 대칭행렬의 이러한 성질은 특이값 분해(SVD), 주성분분석(PCA) 등에서 가장 기본이 되는 성질로 활용
+
+  - 모든 정방행렬이 고유값 분해가 가능한 것은 아니지만, 대칭행렬은 항상 고유값 분해가 가능(직교행렬을 이용하여)
+
+-  직교(orthogonal)와 정규직교(orthonormal), 그리고 직교행렬(orthogonal matrix) 구분
+
+  - 벡터들이 직교(orthogonal) : 벡터들이 서로 수직
+
+    e.g. v<sub>1</sub> · v<sub>2</sub>  = 0
+
+  - 벡터들이 정규직교(orthonormal, orthogonal + normal) : 벡터들이 서로 수직이면서 크기가 1인 단위벡터
+
+    e.g. v' = <sup>v</sup>/<sub>||v||</sub> 
+
+  - 행렬이 직교행렬(orthogonal) : AA<sup>T</sup>=E  (자신의 전치행렬을 역행렬로 갖는 정방행렬)
+
+    (직교행렬의 열벡터 or 행벡터들은 서로 정규직교(orthonomal)한 성질을 가짐)
+
+    e.g. 두 벡터 v<sub>1</sub> · v<sub>2</sub> 가 모두단위벡터(unit vector)이면서 서로 수직
 
 ### 닮음변환(=유사변환)
 
@@ -457,11 +575,11 @@
 - 행렬 A를 역행렬이 존재하는 행렬 P와 다음과 같이 곱하여 새로운 행렬 B를 만드는 과정
   - 이때, A와 B는 similar 하다고 함
     
-     <img src="..\img\vector77.png" alt="png"  />
+      <img src="..\img\vector77.png" alt="png"  />
   - <img src="..\img\vector78.png" alt="png"  /> 일 경우, <img src="..\img\vector79.png" alt="png"  />
 - 닮음변환의 성질
   
-   <img src="..\img\vector80.png" alt="png"  />
+     <img src="..\img\vector80.png" alt="png"  />
 - 대각행렬(diagonal matrix)
   
    <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
@@ -480,7 +598,7 @@
 
 - 공식
   
-   <img src="..\img\vector84.png" alt="png"  />
+    <img src="..\img\vector84.png" alt="png"  />
 
 - 정체
   <img src="..\img\vector85.png" alt="png"  />
@@ -538,11 +656,33 @@
 
      <img src="..\img\vector91.png" alt="png"  />
 
-### 행렬과 복소수
+## 특이값 분해
 
+**Singular Value Decomposition, SVD** 
 
+- 고유값 분해처럼 행렬을 대각화하는 한 방법
 
+  - 하지만 고유값 분해는 정방행렬에한해서 적용 가능하지만, 특이값 분해는 관계없이 모든 m x n 행렬에 대해 적용 가능
 
+- 실수공간에서 임의의 m x n 행렬에 대한 특이값 분해(SVD)는 다음과 같이 정의
+
+   <img src="..\img\picture190.png" alt="png" style="zoom:85%;" />
+
+- 참고 :  https://darkpgmr.tistory.com/106 
+
+## 의사역행렬
+
+**pseudo-inverse**
+
+- 식의 개수(data)가 미지수(설명변수)의 개수보다 많은 경우 행렬 A의 역행렬은 존재하지 않고, 해도 존재하지 않음 
+
+  -> 이 경우 A의 의사역행렬(pseudo inverse)를 이용하여 X를 근사적으로 구함
+
+  > X = A<sup>+</sup>B
+
+-  pseudo inverse A<sup>+</sup> 계산
+
+  <img src="..\img\picture191.png" alt="png" style="zoom:85%;" /> 
 
 <br>
 
@@ -554,7 +694,7 @@
 >
 >http://blog.daum.net/eigenvalue/10856412 
 >
->
+>- 선형대수학 주요용어 및 기본공식 :  https://darkpgmr.tistory.com/103 
 >
 >- 회전변환행렬 유도 : https://o-tantk.github.io/posts/derive-rotation-matrix/ 
 
