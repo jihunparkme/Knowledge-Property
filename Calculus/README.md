@@ -1,4 +1,84 @@
-# Calculus
+#  Calculus
+
+<br>
+
+## Point
+
+### **부정적분**
+
+- 미분의 역연산
+
+  미분했을 때, 2x 가 되는 "x<sup>2</sup> + (C, 상수)" 는 2x 의 부정적분
+
+  이 때, "C" 를 적분상수 
+
+- 부정적분의 표현
+
+   <img src="..\img\picture195.png" alt="img" style="zoom: 80%;" />          * dx 의 'x' 는 적분변수
+
+- 부정적분 공식
+
+   <img src="..\img\picture196.png" alt="img" style="zoom: 90%;" />
+
+### **정적분**
+
+- 연속한 양들의 합
+
+  - 구간이 [a, b]로 정해진 정적분의 값이 상수인 경우 <img src="..\img\picture197.png" alt="img" style="zoom: 90%;" />
+  - 윗끝 x 값의 변화에 따라 정적분 값이 변하는 함수  <img src="..\img\picture198.png" alt="img" style="zoom: 90%;" />
+
+  - e.g. <img src="..\img\picture199.png" alt="img" style="zoom: 90%;" />
+
+    <img src="..\img\picture200.png" alt="img" style="zoom: 90%;" />
+
+    - 2x 라는 함수를 -2 에서 x 까지 정적분을 하면 x<sup>2 </sup>- 4 가 된다는 의미
+
+- 정적분 공식
+
+  <img src="..\img\picture201.png" alt="img" style="zoom: 90%;" />
+
+  - e.g.
+
+     <img src="..\img\picture202.png" alt="img" style="zoom: 90%;" />
+
+### **편미분**
+
+### **편적분**
+
+<br>
+
+## 기초 미적분학
+
+### 적분 기초
+
+- 기본적인 미분 공식
+
+     <img src="..\img\picture194.png" alt="img" style="zoom: 100%;" />
+
+- 적분 : 미분의 역과정
+
+  e.g.  (x<sup>2</sup> + 2x + 3) 를 ''미분''하면, 2x + 2,
+
+  - 여기서 (x<sup>2</sup> + 2x + 3) 를 2x + 2 의 원시함수(미분 전 원래 함수)라고 함
+
+  - 미분 후 함수를 미분 전 함수(원시함수)로 구하는 과정을 ''적분''이라고 함 
+
+  - 적분 공식
+
+     <img src="..\img\picture193.png" alt="img" style="zoom: 90%;" />
+
+- 미분의 표현
+
+  - (미분 할 대상)'
+
+- 적분의 표현
+
+  <img src="..\img\picture192.png" alt="img" style="zoom: 90%;" />  
+
+- 적분상수
+
+  <img src="..\img\picture192.png" alt="img" style="zoom: 90%;" />의 결과는 x<sup>2</sup> + 2x + C   (C를 적분상수라 부름)
+
 
 <br>
 
@@ -55,7 +135,7 @@
   - 예외적으로 증가상태나 감소상태를 계속 유지하는 경우도 있음, 이때는 극값을 갖지 않음(ex. y = x<sup>3</sup>)
 
      <img src="..\img\picture8.png" alt="img" style="zoom: 90%;" />
-   
+  
       <img src="..\img\picture5.png" alt="img"  />
 
 ### 직선의 기울기
@@ -94,8 +174,9 @@
   -  <img src="..\img\picture20.png" alt="img" style="zoom:100%;" />
 
 - 연속이 되기 위한 조건
-  - 어떠한 점에서 극한값과 함수값이 같으면 연속이 됨
-
+  
+- 어떠한 점에서 극한값과 함수값이 같으면 연속이 됨
+  
 - 연속은 함수의 속성이 아니라 어떠한 점에서의 속성
   - "함수 y = f(x) 는 연속이다" 라는 말은 옳지 않음
   - "함수 y = f(x) 는 x = a 에서 연속이다"  or "함수 y = f(x) 는 모든 실수 x 에 대해서 연속이다" or "함수 y = f(x) 는 x = a 에서 불연속이다" 와 같이 함수와 점 두 가지를 같이 나타내야 함
@@ -188,3 +269,7 @@ p15
 >밝히리
 >
 >http://blog.daum.net/eigenvalue/10856412 
+>
+>
+>
+>기초 미적분학 : [Link](# https://blog.naver.com/PostList.nhn?from=postList&blogId=hanpreneur&categoryNo=13&currentPage=5 )

@@ -279,7 +279,7 @@
 
  **continuous probability distribution and  probability distribution**
 
-- **정규분포**
+- **정규분포( Standard normal distribution)**
 
   : 자연 현상이나 사회 현상을 관찰하여 얻은 자료의 상대도수를, 계급의 크기를 작게하여 히스토그램으로 나타내면 자료의 개수가 커질수록 어떤 값을 중심으로 대칭적으로 분포하고, 중심에서 멀어질수록 도수가 작아지는 종 모향의 곡선에 가까워짐
 
@@ -288,7 +288,7 @@
 
     : 확률변수 X가 어떤 구간에 속하는 모든 실숫값을 취할 때, X를 연속확률변수라고 부름
 
-  - **확률밀도함수** : 
+  - **확률밀도함수** (Probability Density Function) : 
 
     <img src="..\img\picture149.png" alt="png" style="zoom:80%;" /> 
 
@@ -335,7 +335,7 @@
 
       정규분포를 평균이 0이고 표준편차가 1인 표준정귭군포로 변환하여 사용
 
-  - 표준정규분포
+  - **표준정규분포**(Standard normal distribution)
 
     - 평균이 0이고, 표준편차가 1인 정규분포 N(1, 0)
 
