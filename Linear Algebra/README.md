@@ -92,14 +92,24 @@
 ### 벡터(수의 순서쌍)
 
 - 순서를 정해서 수를 나열한 순서쌍
-  - ex) 국영수 성적, Aaron = (90, 95, 90)
+  
+  ex) 국영수 성적, Aaron = (90, 95, 90)
+  
 - 각각의 수를 벡터의 성분이라고 부름
+
 - 벡터를 문자로 표현할 때는 a, b 문자 위에 화살표를 그려서 표기
-- A={1, b, 5} 와 B={5, 1, b} 는 같은 집합이지만 벡터는 순서쌍이므로 순서가 매우 중요 --> a=(1, b, 5) 와 b=(5, 1, b) 는 다른 벡터
+
+- A={1, b, 5} 와 B={5, 1, b} 는 같은 집합이지만 벡터는 순서쌍이므로 순서가 매우 중요
+
+  wa=(1, b, 5) 와 b=(5, 1, b) 는 다른 벡터
+
 - 명칭
-  - (2) : 스칼라(실수)
-  - (1, a) : 2차원 벡터
-  - (1, a, 4) : 3차원 벡터
+  
+  (2) : 스칼라(실수)
+  
+  (1, a) : 2차원 벡터
+  
+  (1, a, 4) : 3차원 벡터
 
 ### 벡터의 상등
 
@@ -152,7 +162,7 @@
     <img src="..\img\vector8.png" alt="png" />
   
 - 내적의 성질
-  <img src="..\img\vector9.png" alt="png" />
+  <img src="..\img\vector9.png" alt="png" style="zoom:;" />
 
 ### 벡터와 좌표
 
@@ -171,12 +181,11 @@
 
 - 벡터와 복소수의 관계
   
-
-      <img src="..\img\vector14.png" alt="png" />
+   <img src="..\img\vector14.png" alt="png" />
 
 <br>
 
- <img src="..\img\vector15.png" alt="png" />
+​        <img src="..\img\vector15.png" alt="png" />
 
 - 2차원 벡터는 좌표평면 위의 한 점으로 생각할 수 있고, 복소평면위의 한 복소수로 생각할 수 있음
 
@@ -188,8 +197,8 @@
     <img src="..\img\vector17.png" alt="png" />
   - 벡터의 연산
     
-     <img src="..\img\vector18.png" alt="png" />
-  - 이와 같은 대응 관계를 동형사상(isomorphism)
+      <img src="..\img\vector18.png" alt="png" />
+  - 이차함수의 연산과 벡터의 연산에서 이와 같은 대응 관계를 동형사상(isomorphism)
 - 함수의 연산과 벡터의 연산
   
    <img src="..\img\vector16.png" alt="png" />
@@ -206,9 +215,7 @@
 - 각각의 수를 그 행렬의 성분으라고 부름
   - two by three matrix
     
-  
-    
-       <img src="..\img\vector19.png" alt="png" />
+   <img src="..\img\vector19.png" alt="png" />
   
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
 - 두 개의 행벡터를 세로로 쌓은 모양, 혹은 세 개의 열벡터를 옆으로 붙인 모양이라고 생각 가능
@@ -224,7 +231,7 @@
   <img src="..\img\vector20.png" alt="png" />
 
 - 덧셈이 가능한 행렬에 적용되는 성질
-  <img src="..\img\vector21.png" alt="png" />
+  <img src="..\img\vector21.png" alt="png" style="zoom:80%;" />
 
 ### 행렬의 실수배
 
@@ -270,12 +277,14 @@
        <img src="..\img\Matrix2.png" alt="png" />
 - 정사각행렬 A의 AE = EA = A 를 만족하는 단위행렬이 존재 
   - 단위행렬과의 곱은 예외로 언제나 교환법칙이 성립
+  
   - 이차 단위행렬
     
-       <img src="..\img\vector30.png" alt="png" />
+        <img src="..\img\vector30.png" alt="png" />
+       
   - 삼차 단위행렬
     
-       <img src="..\img\vector31.png" alt="png" />
+       <img src="..\img\vector31.png" alt="png" /> 
 
 ### 행렬의 거듭제곱
 
@@ -288,27 +297,26 @@
 
 - 지수법칙
   
-
-     <img src="..\img\Matrix1.png" alt="png" />
-  
+ <img src="..\img\Matrix1.png" alt="png" /> 
+     
 - 행렬의 곱셉의 교환법칙
   - 교환법칙 성립 X
     
-      <img src="..\img\Matrix3.png" alt="png" />
+       <img src="..\img\Matrix3.png" alt="png" />
+      
   - 정사각행렬의 거듭제곱과 단위행렬에 대해서는 교환법칙이 성립
-    <img src="..\img\Matrix4.png" alt="png" />
+    
+     <img src="..\img\Matrix4.png" alt="png" />
+    
   - 곱셈공식과 매우 유사
     
-       <img src="..\img\Matrix5.png" alt="png" />
+        <img src="..\img\Matrix5.png" alt="png" />
 
-### 역행렬
+### 역행렬:star:
 
 - 행렬 A의 역행렬은 A와 곱해서 항등행렬 E가 나오는 행렬을 A의 역행렬이라고 정의
   
-
-`AB=BA=E`
-
-  위의 식과 같이 A와 곱해서 E가 나오게 하는 행렬 B를 A의 역행렬이라고 하고 A<sup>-1</sup> 이라고 표기 
+  `AB=BA=E` 이 식과 같이 A와 곱해서 E가 나오게 하는 행렬 B를 A의 역행렬이라고 하고 A<sup>-1</sup> 이라고 표기 
 
   - 선형방적식을 풀 때 유용
   
@@ -321,7 +329,7 @@
 
 - 실수의 역수와 같은 의미
   - a는 실수,  ax=xa=1 을 만족하는 실수 x를 a의 역수라고 칭함
-  - a!=0 일 경우, a의 역수 a<sup>-1</sup>가 존재, a<sup>-1</sup>=1/a
+  - a != 0 일 경우, a의 역수 a<sup>-1</sup>가 존재, a<sup>-1</sup>=1/a
 
 - 정사각행렬(정방행렬) A에 대하여 AX = XA = E를 만족하는 행렬 X가 존재할 때,
   - 행렬 X는 A의 역행렬 (=A inverse)
@@ -330,47 +338,48 @@
   
 - 공식
   
-    <img src="..\img\Matrix6.png" alt="png" />
+     <img src="..\img\Matrix6.png" alt="png" />
 
 ### 역행렬의 성질
 
 - 행렬 A, B가 정사각행렬일 때,
   
-     <img src="..\img\Matrix7.png" alt="png" />
+      <img src="..\img\Matrix7.png" alt="png" />
   
   - 행렬 A, B의 역행렬이 존재할 때,
-    <img src="..\img\Matrix8.png" alt="png" />
+    
+     <img src="..\img\Matrix8.png" alt="png" />
 
 ###  단위행렬, 거듭제곱, 역행렬의 공통점
 
 - 단위행렬, 거듭제곱, 역행렬의 정의
   
-
-     <img src="..\img\vector35.png" alt="png" />
-  
+ <img src="..\img\vector35.png" alt="png" />
+     
 - 공통점
   1. 모두 **정사각 행렬**이어야 함
   2. **단위행렬과**의 곱, 거듭제곱, 역행열과의 곱은 언제나 교환법칙이 성립
      - 교환법칙이 성립하는 경우
        
-          <img src="..\img\vector36.png" alt="png" />
+           <img src="..\img\vector36.png" alt="png" />
+          
      - 행렬 식에서 등장 행렬이 <img src="..\img\vector37.png" alt="png" /> 밖에 없다면 교환법칙이 무조건 성립
 
-### 대각합(Trace)
+### 대각합(Trace):star:
 
 - 정사각행렬의 주대각성분의 합으로 정의
   
-     <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
+      <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
+     
 - 행렬 A의 대각합은 tr(A) 로 표현
   
-
-     <img src="..\img\vector38.png" alt="png" />
-  
+ <img src="..\img\vector38.png" alt="png" />
+     
 - 대각합의 성질
   
-    <img src="..\img\vector40.png" alt="png" />
+     <img src="..\img\vector40.png" alt="png" />
 
-### 행렬식(Determinant)
+### 행렬식(Determinant):star:
 
 - 정사각형(정방행렬)에서만 정의, 그 결과는 수 (그 행렬의 특성을 결정짓는 중요한 값)
 
@@ -383,61 +392,69 @@
 - 먼저 치환에 대한 이해가  필요
   - 치환 : 임의의 두 수의 위치는 바꾸는 연산
     
-       <img src="..\img\vector41.png" alt="png" />
+       <img src="..\img\vector41.png" alt="png" /> 
+       
   - odd permutation
     
     - 홀수번의 치환만을 해야 하는 수의 배열
+    
   - even permutation
     
     - 짝수번의 치환만을 해야 하는 수의 배열	
+    
   - 네 개의 수로 만들 수 있는 수의 배열은 4! = 24가지
   
     - 이 가운데 12가지는 even permutation, 나머지는 odd permutation
+    
   - 치환 시 화살표와 같은 방향의 순서를 가지면 even, 반대방향의 순서를 가지면 odd
     
-        <img src="..\img\vector42.png" alt="png" />
+     <img src="..\img\vector42.png" alt="png" />
   
 - 행렬식 
 
   - 행렬식 표현 기호
     
+     <img src="..\img\vector46.png" alt="png" /> 
+           
 
- <img src="..\img\vector46.png" alt="png" />
-       
   - 행렬 <img src="..\img\vector43.png" alt="png" /> 에 대하여 세 수를 선택하여 곱하기 (단, 각 행과 열에서 한 수씩 선택)
     
   - 세 수를 선택하는 방법은 3! = 6 가지
     
   
      <img src="..\img\vector44.png" alt="png" />
-        
+     
     - permutation을 이용하여 행렬식 구하기
     
+      - 배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+        그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
     
-  -배열이 odd인 경우 세 수의 곱 결과에 -1을 곱하고, even인 경우 세 수의 곱 결과에 +1을 곱함
+         <img src="..\img\vector45.png" alt="png" />
     
-      -그 다음 여섯개의 수를 모두 합한 결과가 행렬 A의 행렬식
-    <img src="..\img\vector45.png" alt="png" />
-  
+      - a<sub>1</sub>(b<sub>2</sub>c<sub>3</sub>-b<sub>3</sub>c<sub>2</sub>) - a<sub>2</sub>(b<sub>1</sub>c<sub>3</sub>-b<sub>3</sub>c<sub>1</sub>) + a<sub>3</sub>(b<sub>1</sub>c<sub>2</sub>-b<sub>2</sub>c<sub>1</sub>)
+    
+
   - 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
   
   - 대각행렬 또는 삼각행렬의 행렬식 값은 대각원소들의 곱
 ### 회전변환행렬 유도
 - 기저 벡터인 (1,0)과 (0,1)를 θ만큼 회전
   
-     <img src="..\img\vector50.png" alt="png" />
+      <img src="..\img\vector50.png" alt="png" />
   
-  -   (1,0)을 θ만큼 회전하면 (cosθ,sinθ), (0,1)을 θ만큼 회전하면 (−sin⁡θ,cos⁡θ)
+  - (1,0)을 θ만큼 회전하면 (cosθ,sinθ), (0,1)을 θ만큼 회전하면 (−sin⁡θ,cos⁡θ)
+  
   - 회전 행렬 R은 선형 변환이므로 다음이 성립
     
-       <img src="..\img\vector51.png" alt="png" />
+       <img src="..\img\vector51.png" alt="png" /> 
+       
   -  R(1,0)과 R(0,1)이 (cos⁡θ,sin⁡θ), (−sinθ,cosθ)이므로, 대입하면 유도 
     
-       <img src="..\img\vector52.png" alt="png" />
+       <img src="..\img\vector52.png" alt="png" /> 
     
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
     
-       <img src="..\img\vector54.png" alt="png" />
+        <img src="..\img\vector54.png" alt="png" /> 
 
 ### 행렬식의 성질
 
@@ -446,36 +463,35 @@
   1. <img src="..\img\vector55.png" alt="png" />
      <img src="..\img\vector56.png" alt="png" />
 
-  2.     <img src="..\img\vector57.png" alt="png" />
+  2.      <img src="..\img\vector57.png" alt="png" />
 
-  3.     <img src="..\img\vector58.png" alt="png" />
+  3.      <img src="..\img\vector58.png" alt="png" />
      
-     행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
+     위 성질은 행렬 A의 역행렬 A<sup>-1</sup>가 존재(Exist)하기 위한 필요충분조건
      
       <img src="..\img\vector59.png" alt="png" />
+     
+     반대로 det(A) 일 때, 역행렬이 존재하지 않음
      
   4. A, B의 역행렬은 존재하고, P, Q의 역행렬은 존재하지 않을 때,
      <img src="..\img\vector60.png" alt="png" /> 일 때,
   
       <img src="..\img\vector61.png" alt="png" />
-  
-   -역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
-  
-   -역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다
-  
+     
+     - 역행렬이 존재하는 행렬끼리의 곱한 행렬은 역행렬이 존재
+     - 역행렬이 존재하지 않는 행렬과 다른 행렬을 곱한 행렬은 역행렬이 존재하지 않는다 
      - <img src="..\img\vector62.png" alt="png" />
 
 ### 행렬식의 기하학적 의미
 
 - 2차 정사각행렬의 행렬식의 절대값 = 두 벡터로 이루어진 평행사변형의 넓이
 
-  -  <img src="..\img\vector64.png" alt="png" />
+  - <img src="..\img\vector64.png" alt="png" />
   
-
-     <img src="..\img\vector63.png" alt="png" />
-
-  -  <img src="..\img\vector65.png" alt="png" />
-
+  <img src="..\img\vector63.png" alt="png" />
+  
+-  <img src="..\img\vector65.png" alt="png" />
+  
 - 3차 정사각행렬의 행렬식의 절대값 = 세 벡터로 이루어진 평행육면체의 부피
 
 ## 행렬의 응용
@@ -483,8 +499,8 @@
 ### 행렬과 연립일차방정식
 
 - 연립일차방정식을 행렬로 취급할 수 있음
-  -    <img src="..\img\vector66.png" alt="png" />
-  -   <img src="..\img\vector67.png" alt="png" style="zoom:80%;" />
+  -     <img src="..\img\vector66.png" alt="png" />
+  -    <img src="..\img\vector67.png" alt="png" style="zoom:80%;" />
   - <img src="..\img\vector68.png" alt="png"  />
 
 - 역행렬이 존재하지 않는 연립일차방정식
@@ -497,14 +513,16 @@
        <img src="..\img\vector70.png" alt="png"  />
 - 정리
   - <img src="..\img\vector71.png" alt="png"  />
+  
   - 연립방정식의 해가 존재할 때,
     
-     <img src="..\img\vector72.png" alt="png"  />
+     <img src="..\img\vector72.png" alt="png"  /> 
+     
   - 연립방적식의 해가 존재하지 않을 때, 혹은 ~~이외의 해가 존재할 때,
     
-     <img src="..\img\vector73.png" alt="png"  />
+     <img src="..\img\vector73.png" alt="png"  /> 
 
-### 고유값과 고유벡터
+### 고유값과 고유벡터:star:
 
 - 행렬 A를 선형변환으로 봤을 때, 선형변환 A에 의한 변환 결과가 자기 자신의 상수배가 되는 0이 아닌 벡터를 **고유벡터**라 하고 이 상수배 값을 **고유값** 이라고 함
 
@@ -512,40 +530,41 @@
 
 - 고유값(eigenvalue)
   
-- <img src="..\img\vector74.png" alt="png"  />
+  <img src="..\img\vector74.png" alt="png"  />
   
 - 고유벡터(eigenvector)
   
--  <img src="..\img\vector75.png" alt="png" style="zoom:85%;" />
+   <img src="..\img\vector75.png" alt="png" style="zoom:85%;" />
   
-- 위 식에서 고유값은 3, 고유벡터는 <img src="..\img\vector76.png" alt="png"  />
-
+  위 식에서 고유값은 3, 고유벡터는 <img src="..\img\vector76.png" alt="png"  />
+  
 - 고유값과 고유벡터를 정의하는 식
 
-   <img src="..\img\picture187.png" alt="png" style="zoom:85%;" />
+    <img src="..\img\picture187.png" alt="png" style="zoom:85%;" />
 
   -  특성방정식 (characteristic equation)  
 
     : v = (A- λ E)<sup>-1</sup>*0 = 0 으로 고유벡터(v)를 구할 수 있을 것 같지만, 고유벡터는 정의에 의해 영벡터가 아닌 벡터여야 하므로 A- λ E 의 역행렬이 존재하지 않는 경우 존재함 -> `det(A- λ E) = 0`
 
-### **고유값 분해**
+### **고유값 분해**:star:
 
 **eigen decomposition**
 
 - 행렬 A는 자신의 고유벡터를 열벡터로 하는 행렬과 고유값을 대각원소로 하는 행렬의 곱으로 대각화 분해가 가능
+  
   - 참고 :  https://darkpgmr.tistory.com/105 
 - 고유값분해 가능 조건
   - 행렬 A가 n개의 일차독립 고유벡터를 가져야 함
     - 일차독립( (linearly independent ) : 벡터들의 집합이 있을 때, 이들 벡터 중 어느 한 벡터도 다른 벡터들의 일차결합으로 표현될 수 없는것 
       - 일차결합 :  어떤 벡터도 다른 벡터들의 상수배 합으로 표현될 수 없는 것
 
-- 대칭행렬(symmetric matrix)과 고유값 분해
+- 대칭행렬(symmetric matrix)과 고유값 분해 
 
   - 대칭행렬 : 정방행렬들 중에서 대각원소를 중심으로 원소값들이 대칭되는 행렬(A<sup>T</sup> = A) 인 행렬
 
     - 대각행렬(Diagonal matrix) vs 대칭행렬(Symmetric matrix)
 
-       <img src="..\img\picture188.png" alt="png" style="zoom:85%;" />
+        <img src="..\img\picture188.png" alt="png" style="zoom:85%;" />
 
   - 모든 대칭행렬은 <img src="..\img\picture189.png" alt="png" style="zoom:85%;" /> 처럼 직교행렬을 이용한 고유값 대각화가 가능
 
@@ -571,37 +590,44 @@
 
 ### 닮음변환(=유사변환)
 
-- similar transformation
+**similar transformation**
+
 - 행렬 A를 역행렬이 존재하는 행렬 P와 다음과 같이 곱하여 새로운 행렬 B를 만드는 과정
   - 이때, A와 B는 similar 하다고 함
     
-      <img src="..\img\vector77.png" alt="png"  />
+       <img src="..\img\vector77.png" alt="png"  />
+      
   - <img src="..\img\vector78.png" alt="png"  /> 일 경우, <img src="..\img\vector79.png" alt="png"  />
+  
 - 닮음변환의 성질
   
-     <img src="..\img\vector80.png" alt="png"  />
-- 대각행렬(diagonal matrix)
+      <img src="..\img\vector80.png" alt="png"  /> 
+     
+- 대각행렬(diagonal matrix):star:
   
    <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
   
   - 단위행렬이 대표적인 대각행렬
+  
 - 대각화(diagonalization)
   
   - 정사각행렬 A에 적당한 정사각행렬 P를 이용하여 닮음변환을 시켜 대각행렬을 만드는 과정을 대각화
+  
 - n차 정사각행렬의 행렬식은 고유값들의 곱과 같고, 대각합은 고유값들의 합과 같음
   <img src="..\img\vector82.png" alt="png"  />
   <img src="..\img\vector83.png" alt="png"  />
 
-### 케일리-해밀턴 정리
+### 케일리-해밀턴 정리:star:
 
 - Cayley-Hamilton's Theorem
 
 - 공식
   
-    <img src="..\img\vector84.png" alt="png"  />
+     <img src="..\img\vector84.png" alt="png"  />
 
 - 정체
   <img src="..\img\vector85.png" alt="png"  />
+  
 - 케일리-해밀턴 정리는 보통 높은 차수의 행렬에 관한 식을 낮은 차수로 변형시킬 때 사용
   
   - 복잡한 행렬의 곱(거듭제곱)에서 유용하게 사용
@@ -639,7 +665,8 @@
 
 ### 행렬과 일차변환
 
-- linear transformation
+**linear transformation**
+
 - 직선에 대한 대칭이동, 회전이동 등은 행렬의 곱으로 표현할 수 있기 때문에 일차변환
 
 - 변환
@@ -656,7 +683,7 @@
 
      <img src="..\img\vector91.png" alt="png"  />
 
-## 특이값 분해
+## 특이값 분해:star:
 
 **Singular Value Decomposition, SVD** 
 
@@ -666,11 +693,11 @@
 
 - 실수공간에서 임의의 m x n 행렬에 대한 특이값 분해(SVD)는 다음과 같이 정의
 
-   <img src="..\img\picture190.png" alt="png" style="zoom:85%;" />
+    <img src="..\img\picture190.png" alt="png" style="zoom:85%;" />
 
 - 참고 :  https://darkpgmr.tistory.com/106 
 
-## 의사역행렬
+## 의사역행렬:star:
 
 **pseudo-inverse**
 

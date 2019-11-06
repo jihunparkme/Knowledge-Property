@@ -18,28 +18,29 @@
 
 - 부정적분 공식
 
-   <img src="..\img\picture196.png" alt="img" style="zoom: 90%;" />
+    <img src="..\img\picture196.png" alt="img" style="zoom: 90%;" />
 
 ### **정적분**
 
 - 연속한 양들의 합
 
   - 구간이 [a, b]로 정해진 정적분의 값이 상수인 경우 <img src="..\img\picture197.png" alt="img" style="zoom: 90%;" />
+
   - 윗끝 x 값의 변화에 따라 정적분 값이 변하는 함수  <img src="..\img\picture198.png" alt="img" style="zoom: 90%;" />
 
-  - e.g. <img src="..\img\picture199.png" alt="img" style="zoom: 90%;" />
+  - e.g.
 
-    <img src="..\img\picture200.png" alt="img" style="zoom: 90%;" />
+     <img src="..\img\picture199.png" alt="img" style="zoom: 90%;" /><img src="..\img\picture200.png" alt="img" style="zoom: 90%;" />
 
     - 2x 라는 함수를 -2 에서 x 까지 정적분을 하면 x<sup>2 </sup>- 4 가 된다는 의미
 
 - 정적분 공식
 
-  <img src="..\img\picture201.png" alt="img" style="zoom: 90%;" />
+   <img src="..\img\picture201.png" alt="img" style="zoom: 90%;" />
 
   - e.g.
 
-     <img src="..\img\picture202.png" alt="img" style="zoom: 90%;" />
+      <img src="..\img\picture202.png" alt="img" style="zoom: 90%;" />
 
 ### **편미분**
 
