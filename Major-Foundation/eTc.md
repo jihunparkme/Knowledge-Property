@@ -10,7 +10,8 @@
 
 - 변수의 값(메모리 공간에 저장된 값)을 복사해서 함수 호출
   - 함수 인자 전달에 사용되는 매개변수가 많아질 수 있음
-    <img src="..\img\pointer20.png" alt="img" style="zoom: 120%;" />   값을 복사했으므로, a의 값이 변하지 않음
+    
+     <img src="..\img\pointer20.png" alt="img" style="zoom: 120%;" />    값을 복사했으므로, a의 값이 변하지 않음
 
 
 
@@ -20,7 +21,8 @@
 
 - 주소(메모리 공간의 주소)를 참조해서 함수 호출
   - 배열이나 구조체와 같은 데이터를 함수에 전달에 유용 (실행 시간 단축, 메모리 공간의 적은 차지)
-    <img src="..\img\pointer21.png" alt="img" style="zoom: 130%;" />    주소를 사용하므로, a의 값이 변함
+    
+     <img src="..\img\pointer21.png" alt="img" style="zoom: 130%;" />    주소를 사용하므로, a의 값이 변함
 
 <br>
 
