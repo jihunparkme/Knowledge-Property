@@ -267,13 +267,13 @@
   기호로 <img src="..\img\picture145.png" alt="png" style="zoom: 67%;" />
   - 이 때, 평균, 분산, 표준편차
 
-      <img src="..\img\picture146.png" alt="png" style="zoom:75%;" />
+      <img src="..\img\picture146.png" alt="png" style="zoom:75%;" /> 
 
 - 큰 수의 법칙
 
   : 어떤 시행에서 사건 A가 일어날 확률이 p일 때, n번의 독립시행에서 사건 A가 일어나는 획수를 X라 하면 임의의 양수 h에 대하여
 
-   <img src="..\img\picture147.png" alt="png" style="zoom:80%;" />
+   <img src="..\img\picture147.png" alt="png" style="zoom:70%;" />
 
 ## 연속확률변수와 확률분포
 
@@ -299,19 +299,19 @@
 
   - 구간 [\alpha, \beta] 에서 정의된 연속확률변수 X의 확률밀도함수가 f(x) 일 때, 
 
-     <img src="..\img\picture151.png" alt="png" style="zoom:70%;" />
+      <img src="..\img\picture151.png" alt="png" style="zoom:60%;" />
 
   - 평균, 분산, 표준편차의 성질
 
-     <img src="..\img\picture152.png" alt="png" style="zoom:70%;" />
+      <img src="..\img\picture152.png" alt="png" style="zoom:60%;" />
 
 - 정규분포 ( normal distribution )
 
-  - 연속확률변수 X의 확률밀도함수 f(x)가  <img src="..\img\picture155.png" alt="png" style="zoom:80%;" /> 
+  - 연속확률변수 X의 확률밀도함수 f(x)가  <img src="..\img\picture155.png" alt="png" style="zoom:60%;" /> 
 
   - 정규분포곡선
 
-    : 위 f(x)의 그래프 <img src="..\img\picture156.png" alt="png" style="zoom:70%;" />
+    : 위 f(x)의 그래프 <img src="..\img\picture156.png" alt="png" style="zoom:60%;" />
 
      <img src="..\img\picture157.png" alt="png" style="zoom:90%;" />
 
@@ -325,11 +325,11 @@
 
   - 정규분포곡선의 성질
 
-     <img src="..\img\picture159.png" alt="png" style="zoom:70%;" />
+     <img src="..\img\picture159.png" alt="png" style="zoom:60%;" />
 
-     <img src="..\img\picture160.png" alt="png" style="zoom:70%;" />
+     <img src="..\img\picture160.png" alt="png" style="zoom:60%;" />
 
-     <img src="..\img\picture161.png" alt="png" style="zoom:80%;" />
+     <img src="..\img\picture161.png" alt="png" style="zoom:70%;" />
 
     - 정규분포의 정의가 상당히 복잡하여 확률을 구하기 어렵기 때문에,
 
@@ -339,19 +339,19 @@
 
     - 평균이 0이고, 표준편차가 1인 정규분포 N(1, 0)
 
-  - 확률변수 Z가 표준정규분포를 따를 때, Z의 확률밀도함수는 <img src="..\img\picture162.png" alt="png" style="zoom:70%;" />
+  - 확률변수 Z가 표준정규분포를 따를 때, Z의 확률밀도함수는 <img src="..\img\picture162.png" alt="png" style="zoom:60%;" />
 
   - 정규분포의 표준화
 
     : 일반적인 정규분포를 표준정규분포로 바꾸는 방법
 
-     <img src="..\img\picture163.png" alt="png" style="zoom:70%;" />
+     <img src="..\img\picture163.png" alt="png" style="zoom:60%;" />
 
-  - 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 확률변수 <img src="..\img\picture164.png" alt="png" style="zoom:70%;" /> 는 표준정규분포 N(0, 1)을 따름
+  - 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 확률변수 <img src="..\img\picture164.png" alt="png" style="zoom:60%;" /> 는 표준정규분포 N(0, 1)을 따름
 
     - 이항분포와 정규분포의 관계
 
-      : 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 X는 근사적으로 정규분포 <img src="..\img\picture166.png" alt="png" style="zoom:70%;" />를 따름
+      : 확률변수 X가 이항분포 B(n, p)를 따를 때, n이 충분히 크면 X는 근사적으로 정규분포 <img src="..\img\picture166.png" alt="png" style="zoom:60%;" />를 따름
 
       - n이 충분히 크다는 것은 일반적으로 np >= 5, nq >=5 일 때를 뜻함
 
