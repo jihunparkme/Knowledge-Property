@@ -4,6 +4,219 @@
 
 <br>
 
+## 공식 정리
+
+#### **순열(Permutation)**
+
+서로 다른 n 개의 물건 중 r 개를 택하여 <u>일렬로 나열(순서를 생각)</u>하는 경
+
+ <img src="..\img\picture113.png" alt="png" style="zoom:60%;" />
+
+- **원순열** (서로 다른 것을 원형으로 배열하는 순열)
+
+   <img src="..\img\picture203.png" alt="png" style="zoom:90%;" />
+
+- **중복순열** (서로 다른 n개에서 중복을 허락하여 r개를 선택하여 일렬로 나열하는 것)
+
+   <img src="..\img\picture204.png" alt="png" style="zoom:90%;" />
+
+- **중복이 있는 순열** (n개 중에 중복되는 수가 p개, q개, ..., r개 있을 때 n개를 일렬로 나열)
+
+   <img src="..\img\picture205.png" alt="png" style="zoom:80%;" />
+
+#### **조합(Combination)**
+
+서로 다른 n 개의 물건 중 <u>순서를 생각하지 않고</u> r 개를 택하는 경우
+
+ <img src="..\img\picture114.png" alt="png" style="zoom:60%;" />
+
+- 중복조합 (서로 다른 n개에서 중복을 허락하여 r개를 선택)
+
+   <img src="..\img\picture206.png" alt="png" style="zoom:80%;" />
+
+#### **이항정리**
+
+- 일반항
+
+   <img src="..\img\picture207.png" alt="png" style="zoom:80%;" />
+
+- 이항계수
+
+   <img src="..\img\picture208.png" alt="png" style="zoom:80%;" />
+
+- 이항계수의 성질
+
+   <img src="..\img\picture209.png" alt="png" style="zoom:80%;" />
+
+- 파스칼의 삼각형
+
+   <img src="..\img\picture210.png" alt="png" style="zoom:80%;" />
+
+#### **확률(Probability)**
+
+어떤 시행에서 사건 A가 일어날 가능성을 나타낸 것, **P(A)**
+
+- 용어 정리1
+
+   <img src="..\img\picture211.png" alt="png" style="zoom:70%;" />
+
+- 용어 정리2
+
+   <img src="..\img\picture212.png" alt="png" style="zoom:70%;" />
+
+- 수학적 확률
+
+  - 어떤 시행에서 표본공간의 원소 개수를 n(S), 사건 A의 원소 개수 n(A)일 경우, 사건 A가 발생할 확률
+
+     <img src="..\img\picture213.png" alt="png" style="zoom:80%;" />
+
+- 통계적 확률
+
+  - 일정한 조건에서 같은 시행을 n번 반복했을 때, 사건 A가 일어난 횟수를 r<sub>n</sub> 이라 하면, 이 때 n이 한없이 커짐에 따라 상대도수 <sup>r<sub>n</sub></sup>/n 이 일정한 값 p에 가까워지면 p를 사건 A가 일어날 통계적 확률
+
+     <img src="..\img\picture214.png" alt="png" style="zoom:80%;" />
+
+#### **조건부 확률**
+
+사건 A가 일어났을 때의 사건 B의 조건부확률
+
+- 조건부확률 
+
+   <img src="..\img\picture215.png" alt="png" style="zoom:80%;" />
+
+- 독립사건 (사건 A가 일어나는 여부가 사건 B가 일어날 확률에 영향을 미치지 않을 때)
+
+   <img src="..\img\picture216.png" alt="png" style="zoom:80%;" />
+
+- 종속사건 (사건 A가 일어나는 여부가 사건 B가 일어날 확률에 영향을 미칠 때)
+
+   <img src="..\img\picture217.png" alt="png" style="zoom:80%;" />
+
+- 확률의 곱셈정리
+
+  - 두 사건 A와 B가 동시에 일어날 확률
+
+     <img src="..\img\picture218.png" alt="png" style="zoom:80%;" />
+
+  - 서로 독립인 두 사건 A와 B가 동시에 일어날 확률
+
+     <img src="..\img\picture219.png" alt="png" style="zoom:80%;" />
+
+- 독립 시행
+
+  매번 같은 조건에서 어떤 시행을 반복할 때, 각 시행의 결과가 다른 시행의 결과에 아무런 영향을 주지 않는 경우
+
+  - 한 번 시행에서 사건 A가 일어날 확률이 p, 이 시행을 독립적으로 n회 반복할 때, 사건 A가 r회 일어날 확률
+
+     <img src="..\img\picture220.png" alt="png" style="zoom:80%;" />
+
+#### 확률분포
+
+- 확률변수 : 어떤 시행에서 표본공간의 각 원소에 하나의 실수 값을 대응시키는 것, P(X = x)
+
+- 이산확률변수 : 취할 수 있는 값이 유한개이거나 무한히 많더라도 자연수와 같이 일일이 셀 수 있는 확률변수
+
+- 연속활률변수 : 어떤 범위에 속한 모든 실수 값을 취할 수 있는 확률변수
+
+- 확률분포 : 이산확률변수 X가 취하는 값(x<sub>i</sub>)과 X가 이 값(x<sub>i</sub>)을 취할 확률(p<sub>i</sub>)의 대응 관계
+
+   <img src="..\img\picture222.png" alt="png" style="zoom:80%;" />
+
+- 확률질량함수 : 확률분포의 관계식
+
+   <img src="..\img\picture221.png" alt="png" style="zoom:80%;" />
+
+- 확률질량함수의 평균, 분산, 표준편차
+
+   <img src="..\img\picture224.png" alt="png" style="zoom:80%;" />
+
+   <img src="..\img\picture223.png" alt="png" style="zoom:80%;" />               <img src="..\img\picture226.png" alt="png" style="zoom:80%;" /> <img src="..\img\picture225.png" alt="png" style="zoom:80%;" />
+
+- 평균, 분산, 표준편차의 성질
+
+   <img src="..\img\picture227.png" alt="png" style="zoom:80%;" />
+
+- 이항분포, <img src="..\img\picture237.png" alt="png" style="zoom:70%;" />
+
+  - 1회의 시행에서 사건 A가 일어날 확률을 p, n회의 독립시행에서 그 사건 A가 일어나는 횟수를 확률변수 X라 할 때, 확률변수 X의 확률질량함수
+
+     <img src="..\img\picture228.png" alt="png" style="zoom:80%;" />
+
+  - 이항분포의 평균, 분산, 표준편차
+
+     <img src="..\img\picture229.png" alt="png" style="zoom:80%;" />
+
+- 확률밀도함수 : 연속확률변수 X가 구간 [a, b]에 속하는 모든 실수값을 취하고
+
+   <img src="..\img\picture230.png" alt="png" style="zoom:80%;" /> 와 같이 나타낼 수 있을 때 
+
+- 확률밀도함수의 성질
+
+   <img src="..\img\picture231.png" alt="png" style="zoom:80%;" />
+
+- 정규분포, <img src="..\img\picture234.png" alt="png" style="zoom:70%;" /> 
+
+  : 연속확률변수 X의 확률밀도함수 f(x)가 <img src="..\img\picture232.png" alt="png" style="zoom:70%;" /> 일 때
+
+- 정규분포곡선의 성질
+
+   <img src="..\img\picture235.png" alt="png" style="zoom:70%;" />
+
+- 표준정규분포 : 평균이 0, 표준편차가 1인 정규분포 N(0, 1)
+
+- 정규분포의 표준화
+
+   <img src="..\img\picture236.png" alt="png" style="zoom:70%;" />
+
+- 이항분포와 정규분포 : 확률변수 X가 이항분포 <img src="..\img\picture237.png" alt="png" style="zoom:70%;" /> 를 따를 때, n이 충분히 크면 X의 분포는 근사적으로 정규분포 <img src="..\img\picture238.png" alt="png" style="zoom:70%;" /> 을 따름 (단, p + q = 1)
+
+#### 통계적 추정
+
+- 전수조사 : 조사 대상이 되는 자료 전체를 조사하는 것
+
+- 표본조사 : 조사하고자 하는 자료로부터 일부 대상을 뽑아 그 성질을 조사하고, 그 결과로부터 자료 전체의 성질을 추측하는 것
+
+- 모집단 : 조사 대상이 되는 집단 전체
+
+- 표본 : 모집단에서 뽑은 자료 일부
+
+- 임의추출 : 모집단의 각 원소를 같은 확률로 추출하는 것
+
+- 임의표본 : 임의추출된 표본
+
+- 복원추출 : 한 개의 자료를 추출한 후 다시 되돌려 놓고 추출하는 것
+
+- 비복원추출 : 한 개의 자료를 추출한 후 다시 되돌려 놓지 않고 추출하는 것
+
+- 모평균(m), 모분산(σ<sup>2</sup>), 모표준편차(σ)
+
+- 표본평균(X¯), 표본분산(S<sup>2</sup>), 표본표준편차(S)
+
+   <img src="..\img\picture239.png" alt="png" style="zoom:70%;" />
+
+- 표본평균의 분포
+
+  - 모집단이 정규분표 <img src="..\img\picture240.png" alt="png" style="zoom:70%;" /> 을 따르면, 표본평균은 정규분포 <img src="..\img\picture241.png" alt="png" style="zoom:70%;" /> 을 따름
+  - 모집단이 정규분포를 따르지 않아도 n이 충분히 크면 표본평균은 정규분포 <img src="..\img\picture241.png" alt="png" style="zoom:70%;" /> 에 가까워짐
+
+- 모평균의 추정 : 모집단에서 추출한 표본을 이용하여 모평균을 추측하는 것
+
+- 신뢰도 : 표본평균의 분포로부터 모평균이 포함될 구간을 얻을 때, 그 구간에 모평균이 포함될 확률
+
+- 신뢰구간 : 모평균이 존재할 것으로 추정되는 구간
+
+- 모평균의 신뢰구간 : 정규분포 <img src="..\img\picture240.png" alt="png" style="zoom:70%;" />을 모집단에서 크기가 n인 표본을 임의추찰할 때
+
+  - 신뢰도 95%의 신뢰구간
+
+     <img src="..\img\picture242.png" alt="png" style="zoom:70%;" />
+
+  - 신뢰도 99%의 신뢰구간
+
+     <img src="..\img\picture243.png" alt="png" style="zoom:70%;" />
+
+<br>
+
 ## 순열과 조합
 
 **Permutation and Combination**
@@ -207,11 +420,11 @@
 
     P(A) > 0 , P(B) > 0 일 때, 두 사건 A, B 가 서로 독립이기 위한 필요충분조건
 
-     <img src="..\img\picture134.png" alt="png" style="zoom:70%;" />
+     <img src="..\img\picture134.png" alt="png" style="zoom:60%;" />
 
   - 두 사건 A, B 가 서로 독립일 때,
 
-     <img src="..\img\picture135.png" alt="png" style="zoom:70%;" />
+      <img src="..\img\picture135.png" alt="png" style="zoom:70%;" />
 
 - 독립시행의 확률
 
@@ -254,11 +467,11 @@
 
   - 이산확률변수 X의 확률질량함수가 <img src="..\img\picture139.png" alt="png" style="zoom:65%;" /> 일 때,
 
-     <img src="..\img\picture142.png" alt="png" style="zoom:75%;" />
+      <img src="..\img\picture142.png" alt="png" style="zoom:60%;" />
 
 - 평균, 분산, 표준편차의 성질
 
-  <img src="..\img\picture143.png" alt="png" style="zoom:80%;" /> 
+   <img src="..\img\picture143.png" alt="png" style="zoom:60%;" /> 
 
 - 이항분포 (binomial distribution)
 
@@ -459,4 +672,6 @@
 >
 > Sooji Shin
 >
->  http://soojishin.com/ 
+> http://soojishin.com/ 
+>
+> [문제 풀이](# https://www.mathfactory.net/11261 )

@@ -273,4 +273,7 @@ p15
 >
 >
 >
->기초 미적분학 : [Link](# https://blog.naver.com/PostList.nhn?from=postList&blogId=hanpreneur&categoryNo=13&currentPage=5 )
+>[기초 미적분학](# https://blog.naver.com/PostList.nhn?from=postList&blogId=hanpreneur&categoryNo=13&currentPage=5 )
+>
+>[미적분 예제](# https://www.mathfactory.net/10687 )
+
