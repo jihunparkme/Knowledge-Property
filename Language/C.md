@@ -215,8 +215,8 @@
   
     1. 포인팅 대상 함수: void add(double num1, double num2)
     2. 함수 포인터: void (*pointer) (double, double);
-  3. 함수 포인터에 함수 시작 주소 저장: pointer=add;
-  4. 함수 포인터를 이용한 함수 호출: pointer(3.1, 5.1);
+    3. 함수 포인터에 함수 시작 주소 저장: pointer=add;
+    4. 함수 포인터를 이용한 함수 호출: pointer(3.1, 5.1);
   
     ```c
     #include <stdio.h>
@@ -256,7 +256,7 @@
 ```c
   #include <stdio.h>
   
-int main()
+  int main()
   {
   	int array[3] = { 10, 20, 30 };
   	printf("%d %d %d \n", sizeof(array), sizeof(array + 0), sizeof(&array[0]));
@@ -327,8 +327,9 @@ int main()
   - 배열 : 배열의 길이에 따라 가변적
 
 - 주소 가감산을 이용한 배열의 접근
-  <img src="..\img\pointer14.png" alt="img"/>
-
+  
+ <img src="..\img\pointer14.png" alt="img"/>
+  
   ```c
   #include <stdio.h>
   int main()
@@ -357,17 +358,17 @@ int main()
       // *(p-1) == p[-1] 
       // *p == *(p+0) == p[0]
   }
+```
+  
   ```
-
-  ```
   10 20 30
   10 20 30
   10 20 30
   10 20 30
   10 20 30
   10 20 30
-  ```
-
+```
+  
 - 포인터 변수를 통한 1차원 배열 값 입력
   <img src="..\img\pointer15.png" alt="img"/>
 
@@ -416,7 +417,7 @@ int main()
   	*p = 20;		// p[1]=20; 
   	printf("%d %d %d \n", p[-1], p[0], p[1]);
   
-  	p = p + 1;
+  	p = p + 2;
   	*p = 30;		// p[2]=30;
   	printf("%d %d %d \n", p[-2], p[-1], p[0]);
   }
@@ -432,7 +433,7 @@ int main()
 
 - 2차원 배열에서 array[i] == *(array+i) 는 주소
   
-   <img src="..\img\pointer17.png" alt="img"  />
+    <img src="..\img\pointer17.png" alt="img"  />
   
 - 1차원 배열: *(array+i) == array[i] == *&array[i] 는 값 
   
@@ -480,9 +481,9 @@ int main()
 
   - 열을 지정할 수 있는 포인터 (배열을 가리키는 포인터)
     
+      <img src="..\img\pointer18.png" alt="img"  />
+        
 
- <img src="..\img\pointer18.png" alt="img"  />
-    
 - 배열 포인터 변수를 통한 2차원 배열의 접근 (열을 지정)
   
     ```c
@@ -512,9 +513,9 @@ int main()
 
   - 주소를 저장하는 배열
     
+      <img src="..\img\pointer19.png" alt="img" style="zoom:120%;" />
+        
 
- <img src="..\img\pointer19.png" alt="img" style="zoom:120%;" />
-    
 - 포인터 배열의 선언
   
     ```c

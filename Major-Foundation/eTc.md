@@ -167,6 +167,40 @@ UnSupervised Learning
   - A를 하면 B도 하더라' 라는 연관성 발견. ex) 장바구니 분석(A를 사면 B도 사더라)
   - 상품 구매 규칙을 통한 구매 패턴 예측
 
+## 활성화 함수
+
+**Activation Function**
+
+- step function
+
+  - 임계값을 기준으로 활성화되거나 비활성화되는 형태
+
+  - 0을 기준으로 출력이 0이거나 1로 표현
+
+     <img src="..\img\picture245.png" alt="img" style="zoom: 60%;" />  <img src="..\img\picture247.png" alt="img" style="zoom: 70%;" />
+
+- sigmoid function(시그모이드 함수)
+
+  - 일정값을 기준으로 항상 0과 1사이의 값만 가질 수 있도록 하는 비선형함수
+
+  - x값이 작아질 수록 0에 수렴, 커질수록 1에 수렴
+
+     <img src="..\img\picture244.png" alt="img" style="zoom: 60%;" />    <img src="..\img\picture248.png" alt="img" style="zoom: 70%;" />
+
+- ReLu function
+
+  - sigmoid에서 layer가 많을 시 0으로 수렴하는 문제를 해결
+
+  - 0미만은 0을 반환하고, 입력이 특정값을 넘으면 입력 그대로 반환
+
+     <img src="..\img\picture246.png" alt="img" style="zoom: 60%;" />      <img src="..\img\picture249.png" alt="img" style="zoom: 60%;" />
+
+- tanh 함수(하이퍼볼릭탄젠트)
+
+  - 일정값을 넘어가면 1에 수렴, 일정값 이하는 -1에 수렴
+
+     <img src="..\img\picture250.png" alt="img" style="zoom: 60%;" />
+
 <br>
 
 <Br>
