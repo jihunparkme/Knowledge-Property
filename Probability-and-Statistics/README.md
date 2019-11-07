@@ -124,17 +124,17 @@
 
 - 확률질량함수 : 확률분포의 관계식
 
-   <img src="..\img\picture221.png" alt="png" style="zoom:80%;" />
+    <img src="..\img\picture221.png" alt="png" style="zoom:80%;" />
 
-- 확률질량함수의 평균, 분산, 표준편차
+- 연속확률변수의 평균, 분산, 표준편차
 
-   <img src="..\img\picture224.png" alt="png" style="zoom:80%;" />
+    <img src="..\img\picture224.png" alt="png" style="zoom:80%;" />
 
    <img src="..\img\picture223.png" alt="png" style="zoom:80%;" />               <img src="..\img\picture226.png" alt="png" style="zoom:80%;" /> <img src="..\img\picture225.png" alt="png" style="zoom:80%;" />
 
 - 평균, 분산, 표준편차의 성질
 
-   <img src="..\img\picture227.png" alt="png" style="zoom:80%;" />
+    <img src="..\img\picture227.png" alt="png" style="zoom:80%;" />
 
 - 이항분포, <img src="..\img\picture237.png" alt="png" style="zoom:70%;" />
 
@@ -152,7 +152,7 @@
 
 - 확률밀도함수의 성질
 
-   <img src="..\img\picture231.png" alt="png" style="zoom:80%;" />
+    <img src="..\img\picture231.png" alt="png" style="zoom:80%;" /> 
 
 - 정규분포, <img src="..\img\picture234.png" alt="png" style="zoom:70%;" /> 
 
@@ -512,11 +512,11 @@
 
   - 구간 [\alpha, \beta] 에서 정의된 연속확률변수 X의 확률밀도함수가 f(x) 일 때, 
 
-      <img src="..\img\picture151.png" alt="png" style="zoom:60%;" />
+       <img src="..\img\picture151.png" alt="png" style="zoom:60%;" />
 
   - 평균, 분산, 표준편차의 성질
 
-      <img src="..\img\picture152.png" alt="png" style="zoom:60%;" />
+       <img src="..\img\picture152.png" alt="png" style="zoom:60%;" />
 
 - 정규분포 ( normal distribution )
 

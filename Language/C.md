@@ -17,12 +17,13 @@
 
 - 포인터 변수의 선언
   
+
  <img src="..\img\pointer1.png" alt="img" style="zoom:150%;" />
-  
+
   - ex)
     
      <img src="..\img\pointer2.png" alt="img"  />
-  
+
   ```C
   #include <stdio.h>
   
@@ -39,17 +40,18 @@
   	printf("%c\n", *cp);	// 간접 접근
   }
   ```
-  
+
   ```
   53f993, A, A
   53f984, 53f993, 53f993		// c의 주소와 cp의 주소가 같다는 것을 확인
   A
   A
   ```
-  
+
   - ex)
-    <img src="..\img\pointer3.png" alt="img"  />
-  
+    
+     <img src="..\img\pointer3.png" alt="img"  />
+
   ```c
   #include <stdio.h>
   
@@ -70,19 +72,21 @@
   	printf("%d %d %d %d\n", a, b, c, *ip);
   }
   ```
-  
+
   ```
   10 0 0 10
   10 20 0 20
   10 20 30 30
   ```
-  
+
 - 잘못 사용된 포인터
   
+
  <img src="..\img\pointer4.png" alt="img"  />
-  
+
 - 포인터 변수의 초기화 방법 2가지
-  <img src="..\img\pointer5.png" alt="img"  />
+  
+   <img src="..\img\pointer5.png" alt="img"  />
 
 ### 다차원 포인터 변수의 선언과 사용
 
@@ -90,10 +94,15 @@
 
   - 2차원 이상의 포인터 변수를 의미
     - int* p1 = NULL;         //1차원 포인터 변수
-      - 역할 : 일반 변수의 주소를 저장
+      
+      -역할 : 일반 변수의 주소를 저장
+      
     - int** p2 = NULL;       //2차원 포인터 변수
+      
       -역할: 1차원 포인터 변수의 주소를 저장
+      
     - int*** p3 = NULL;     //3차원 포인터 변수 
+      
       -역할: 2차원 포인터 변수의 주소를 저장
     
   - ex)
@@ -127,8 +136,9 @@
 ### 주소의 가감산
 
 - ex)
-  <img src="..\img\pointer9.png" alt="img"/>
-
+  
+ <img src="..\img\pointer9.png" alt="img"/>
+  
   ```c
   #include <stdio.h>
   
@@ -148,8 +158,8 @@
   	printf("%c %x %x \n", c, cp, cpp);
   	printf("%c %x %x \n", c + 1, cp + 1, cpp + 1);
   }
-  ```
-
+```
+  
   ```
   5af7ab 5af79c 5af790
   5af7ac 5af7a0 5af794
@@ -158,11 +168,12 @@
   A 12ffbe7 12ffbd8
   B 12ffbe8 12ffbdc
   // A의 다음 주소 값인 B가 출력, 포인터 변수의 주소도 1 증가
-  ```
-
+```
+  
 - ex)
-  <img src="..\img\pointer10.png" alt="img"/>
-
+  
+<img src="..\img\pointer10.png" alt="img"/> 
+  
   ```c
   #include <stdio.h>
   
@@ -178,8 +189,8 @@
   	printf("%d %d %d \n", *(ip + 0), *(ip + 1), *(ip + 2));
   	printf("%d %d %d \n", *(*ipp + 0), *(*ipp + 1), *(*ipp + 2));
   }
-  ```
-
+```
+  
   ```
   10 20 30
   10 20 30
@@ -190,22 +201,23 @@
 
 - 함수의 시작 주소를 저장하는 변수
   
- <img src="..\img\pointer12.png" alt="img"/>
-  
+    <img src="..\img\pointer12.png" alt="img"/>
+
 - 함수 포인터의 필요성
   
     - 일반적인 함수 호출 보다 빠른 처리 속도를 기대
+  
   - 컴파일러, 인터프리터, 게임 프로그래밍과 같은 시스템 프로그래밍 분야에서 사용
   
   - ex)
   
-   <img src="..\img\pointer11.png" alt="img"/>
-    
+      <img src="..\img\pointer11.png" alt="img"/>
+  
     1. 포인팅 대상 함수: void add(double num1, double num2)
     2. 함수 포인터: void (*pointer) (double, double);
   3. 함수 포인터에 함수 시작 주소 저장: pointer=add;
   4. 함수 포인터를 이용한 함수 호출: pointer(3.1, 5.1);
-    
+  
     ```c
     #include <stdio.h>
     
@@ -229,8 +241,8 @@
     
     	return 0;
   }
-  ```
-    
+    ```
+  
     ```
     add 함수의 주소 : 1231375
     함수 포인터의 주소 : 3cfb88
@@ -423,6 +435,7 @@ int main()
    <img src="..\img\pointer17.png" alt="img"  />
   
 - 1차원 배열: *(array+i) == array[i] == *&array[i] 는 값 
+  
   - 2차원 배열: *(array+i) == array[i] == *&array[i] 는 주소 
   
 - 포인터 변수를 통한 2차원 배열의 접근
@@ -467,6 +480,7 @@ int main()
 
   - 열을 지정할 수 있는 포인터 (배열을 가리키는 포인터)
     
+
  <img src="..\img\pointer18.png" alt="img"  />
     
 - 배열 포인터 변수를 통한 2차원 배열의 접근 (열을 지정)
@@ -498,6 +512,7 @@ int main()
 
   - 주소를 저장하는 배열
     
+
  <img src="..\img\pointer19.png" alt="img" style="zoom:120%;" />
     
 - 포인터 배열의 선언
