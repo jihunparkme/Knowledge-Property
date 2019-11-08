@@ -22,6 +22,8 @@
   - push : O(1)
   - pop : O(1)
 
+   <img src="..\img\picture254.png" alt="img" style="zoom: 70%;" />
+
 - stack class
 
   ```python
@@ -122,6 +124,8 @@
 
   - enqueue : O(1)
   - dequeue : O(N)
+
+  <img src="..\img\picture253.png" alt="img" style="zoom: 70%;" /> 
 
 - Queue class
 
