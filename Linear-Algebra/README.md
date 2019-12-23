@@ -215,6 +215,7 @@
 - 각각의 수를 그 행렬의 성분으라고 부름
   - two by three matrix
     
+  
    <img src="..\img\vector19.png" alt="png" />
   
 - 행렬의 가로줄은 행(row), 세로줄은 열(column)
@@ -281,7 +282,7 @@
   - 이차 단위행렬
     
         <img src="..\img\vector30.png" alt="png" />
-       
+    
   - 삼차 단위행렬
     
        <img src="..\img\vector31.png" alt="png" /> 
@@ -297,6 +298,7 @@
 
 - 지수법칙
   
+
  <img src="..\img\Matrix1.png" alt="png" /> 
      
 - 행렬의 곱셉의 교환법칙
@@ -354,6 +356,7 @@
 
 - 단위행렬, 거듭제곱, 역행렬의 정의
   
+
  <img src="..\img\vector35.png" alt="png" />
      
 - 공통점
@@ -362,7 +365,7 @@
      - 교환법칙이 성립하는 경우
        
            <img src="..\img\vector36.png" alt="png" />
-          
+       
      - 행렬 식에서 등장 행렬이 <img src="..\img\vector37.png" alt="png" /> 밖에 없다면 교환법칙이 무조건 성립
 
 ### 대각합(Trace):star:
@@ -370,9 +373,10 @@
 - 정사각행렬의 주대각성분의 합으로 정의
   
       <img src="..\img\vector39.png" alt="png" style="zoom: 60%;" />
-     
+  
 - 행렬 A의 대각합은 tr(A) 로 표현
   
+
  <img src="..\img\vector38.png" alt="png" />
      
 - 대각합의 성질
@@ -432,18 +436,17 @@
          <img src="..\img\vector45.png" alt="png" />
     
       - a<sub>1</sub>(b<sub>2</sub>c<sub>3</sub>-b<sub>3</sub>c<sub>2</sub>) - a<sub>2</sub>(b<sub>1</sub>c<sub>3</sub>-b<sub>3</sub>c<sub>1</sub>) + a<sub>3</sub>(b<sub>1</sub>c<sub>2</sub>-b<sub>2</sub>c<sub>1</sub>)
-    
-
-  - 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
+  
+- 마찬가지로 <img src="..\img\vector47.png" alt="png" /> 일 때, 선택 경우는 <img src="..\img\vector48.png" alt="png" />이고 <img src="..\img\vector49.png" alt="png" />
   
   - 대각행렬 또는 삼각행렬의 행렬식 값은 대각원소들의 곱
 ### 회전변환행렬 유도
 - 기저 벡터인 (1,0)과 (0,1)를 θ만큼 회전
-  
-      <img src="..\img\vector50.png" alt="png" />
-  
+
+   <img src="..\img\vector50.png" alt="png" />
+
   - (1,0)을 θ만큼 회전하면 (cosθ,sinθ), (0,1)을 θ만큼 회전하면 (−sin⁡θ,cos⁡θ)
-  
+
   - 회전 행렬 R은 선형 변환이므로 다음이 성립
     
        <img src="..\img\vector51.png" alt="png" /> 
@@ -453,7 +456,7 @@
        <img src="..\img\vector52.png" alt="png" /> 
     
   - 3차원의 경우 회전축에 대해  <img src="..\img\vector53.png" alt="png" />
-    
+  
         <img src="..\img\vector54.png" alt="png" /> 
 
 ### 행렬식의 성질
@@ -602,7 +605,7 @@
 - 닮음변환의 성질
   
       <img src="..\img\vector80.png" alt="png"  /> 
-     
+  
 - 대각행렬(diagonal matrix):star:
   
    <img src="..\img\vector81.png" alt="png"  /> 처럼 주대각성분 이외의 모든 성분이 0일 정사각행렬
