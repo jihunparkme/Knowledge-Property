@@ -1,31 +1,28 @@
-class queue():
-    def __init__(self):
-        self.item = []
+import collections
 
-    def dequeue(self):
-        if len(self.item) == 0:
-            return -1
-        return self.item.pop(0)
+def solution(p, l):
+    ans = 0
+    m = max(p)
+    # p = collections.deque(p)
 
-    def enqueue(self, n):
-        self.item.append(n)
-        pass
+    while True:
+        # v = p.popleft()
+        if m == v:
+            ans += 1
+            if l == 0:
+                break
+            else:
+                l -= 1
+            m = max(p)
+        else:
+            p.append(v)
+            if l == 0:
+                l = len(p)-1
+            else:
+                l -= 1
+    return ans
 
-    def printQueue(self):
-        print(self.item)
-
-
-if __name__ == "__main__":
-    lq = queue()
-    lq.enqueue(1)
-    lq.enqueue(2)
-    lq.enqueue(3)
-    lq.enqueue(4)
-    lq.enqueue(5)
-    lq.printQueue()
-    print(lq.dequeue())
-    print(lq.dequeue())
-    print(lq.dequeue())
-    print(lq.dequeue())
-    print(lq.dequeue())
-    lq.printQueue()
+if __name__ == '__main__':
+    priorities = [1,2,3,9,9,9]
+    location = 1
+    print(solution(priorities, location))
