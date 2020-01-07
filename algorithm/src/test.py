@@ -1,28 +1,19 @@
-import collections
+def solution(arrangement):
+    answer = 0
+    sticks = 0
+    rasor_to_zero = arrangement.replace('()','0')
 
-def solution(p, l):
-    ans = 0
-    m = max(p)
-    # p = collections.deque(p)
+    for i in rasor_to_zero:
+        if i == '(':
+            sticks += 1
+        elif i =='0' :
+            answer += sticks
+        else :
+            sticks -= 1
+            answer += 1
 
-    while True:
-        # v = p.popleft()
-        if m == v:
-            ans += 1
-            if l == 0:
-                break
-            else:
-                l -= 1
-            m = max(p)
-        else:
-            p.append(v)
-            if l == 0:
-                l = len(p)-1
-            else:
-                l -= 1
-    return ans
+    return answer
 
-if __name__ == '__main__':
-    priorities = [1,2,3,9,9,9]
-    location = 1
-    print(solution(priorities, location))
+if __name__ == "__main__":
+    arrangement = "()(((()())(())()))(())"
+    print(solution(arrangement))
