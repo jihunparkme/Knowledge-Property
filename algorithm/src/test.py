@@ -1,19 +1,13 @@
-def solution(arrangement):
-    answer = 0
-    sticks = 0
-    rasor_to_zero = arrangement.replace('()','0')
+from itertools import permutations
+def solution(n):
+    a = set()
+    for i in range(len(n)):
+        a |= set(map(int, map("".join, permutations(list(n), i + 1))))
+    a -= set(range(0, 2))
+    for i in range(2, int(max(a) ** 0.5) + 1):
+        a -= set(range(i * 2, max(a) + 1, i))
+    return len(a)
 
-    for i in rasor_to_zero:
-        if i == '(':
-            sticks += 1
-        elif i =='0' :
-            answer += sticks
-        else :
-            sticks -= 1
-            answer += 1
-
-    return answer
-
-if __name__ == "__main__":
-    arrangement = "()(((()())(())()))(())"
-    print(solution(arrangement))
+if __name__=='__main__':
+    numbers = "17"
+    print(solution(numbers))
