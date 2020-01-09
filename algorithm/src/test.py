@@ -1,13 +1,25 @@
 from itertools import permutations
-def solution(n):
-    a = set()
-    for i in range(len(n)):
-        a |= set(map(int, map("".join, permutations(list(n), i + 1))))
-    a -= set(range(0, 2))
-    for i in range(2, int(max(a) ** 0.5) + 1):
-        a -= set(range(i * 2, max(a) + 1, i))
-    return len(a)
+
+def solution(baseball):
+    lst = list(permutations([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
+    for i in baseball:
+        for item in lst[:]:
+            if not check_score([int(i) for i in list(str(i[0]))], item, i[1], i[2]):
+                lst.remove(item)
+    return len(lst)
+
+def check_score(question, candidate, s, b):
+    strike = 0
+    for i in range(len(question)):
+        if question[i] == candidate[i]:
+            strike += 1
+    if s != strike:
+        return False
+    ball = len(set(question) & set(candidate))-strike
+    if b != ball:
+        return False
+    return True
 
 if __name__=='__main__':
-    numbers = "17"
-    print(solution(numbers))
+    baseball = [[123, 1, 1], [356, 1, 0], [327, 2, 0], [489, 0, 1]]
+    print(solution(baseball))
