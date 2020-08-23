@@ -705,7 +705,7 @@ ObjectInputStream ois =new ObjectInputStream(new FileInputStream());
 
 <br/>
 
-### Network
+## Network
 
 - TCP/UDP 개념
 
@@ -713,7 +713,7 @@ ObjectInputStream ois =new ObjectInputStream(new FileInputStream());
 - TCP : 전송의 보장
   - 데이터가 순서대로 도착, 데이터 도착을 확인(미수신 시 재전송)
   
-- UDP : 전송의 보장 X 
+- UDP : 전송의 보장 X
   - 데이터 도착에 순서가 없음, 데이터 도착을 확인 안함
   - Broadcasting에 많이 활용 (ex. 방송, 라디오..)
 ```
@@ -810,11 +810,9 @@ public class NetworkHttpServer {
 }
 ```
 
-
-
 <br/>
 
-### JDBC API
+## JDBC API
 
 ```java
 public class JDBCMySQLTest1 {
@@ -880,7 +878,7 @@ public class JDBCMySQLTest1 {
 
 <br/>
 
-### XML 파서
+## XML 파서
 
 - SAX
 
